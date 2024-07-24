@@ -1,0 +1,45 @@
+.filter{
+    width: 100%;
+    height: 100px;
+    background-color:#f9f1e7 ;
+    display: flex;
+    padding-inline: 5%;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.filter-options{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: fit-content;
+}
+
+
+.results-page{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    flex-direction: row;
+}
+
+.input-show{
+    width: 55px;
+    height: 55px;
+}
+
+.ctrl{
+    width: 16.33px;
+    height: 16.33px;
+
+}
+
+.option-filter{
+    width: 188px;
+    height: 55px;
+}

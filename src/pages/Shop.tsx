@@ -1,6 +1,6 @@
 import BannerBenefits from '../components/BannerBenefits';
 import BannerPage from '../components/BannerPage'; 
-
+import FilterShop from '../components/FilterShop'
 const Shop = () => {
   return (
     <div>
@@ -8,7 +8,9 @@ const Shop = () => {
         namepage="Shop" 
         breadcrumb="Home > Shop"
       />
+      <FilterShop />
        <BannerBenefits />
+       
     </div>
   )
 }
