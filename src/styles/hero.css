@@ -1,0 +1,77 @@
+.herohome {
+    width: 100%;
+    height: 716.83px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .homebox {
+    width: 50%;
+    height: 443px;
+    background-color: rgb(0, 255, 136);
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-info {
+    width: 561px;
+    height: 400px;
+    background-color: #fff3e3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hero-info > * {
+    margin-bottom: 20px; 
+  }
+  
+  .hero-info > *:last-child {
+    margin-bottom: 0; 
+  }
+  
+  .s-hero {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+  
+  .hero-info h1 {
+    font-family: Poppins;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 65px;
+    text-align: left; 
+    color: #B88E2F;
+  }
+  
+  .hero-info p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #333333;
+  }
+  
+  .buy {
+    width: 222px;
+    height: 74px;
+    background-color: #B88E2F;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    color: white;
+  }
+  

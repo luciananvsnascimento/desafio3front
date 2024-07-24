@@ -1,0 +1,54 @@
+.banner {
+    width: 100%;
+    height: 270px;
+    background-color: #FAF3EA;
+    padding: 100px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-banner {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1; 
+    min-width: 200px; 
+}
+
+.image-container {
+    width: 60px;
+    height: 60px;
+}
+
+.text-container h3, .text-container p {
+    margin: 0;
+}
+.text-container p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color:#898989;
+
+}
+
+.text-container h3{
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    color:black;
+
+}
