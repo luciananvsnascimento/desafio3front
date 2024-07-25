@@ -41,18 +41,21 @@ const Footer = () => {
               <li>Privacy Policies</li>
             </ul>
           </div>
-          <div className="footer-section">
+          
+        </div>
+        <div className="footer-section">
             <span className='title'>Newsletter</span>
             <form className="newsletter-form">
               <input type="email" placeholder="Enter Your Email Address" />
               <button type="submit">SUBSCRIBE</button>
             </form>
           </div>
-        </div>
-        <div className='f-copyright'>
+        
+        
+      </div>
+      <div className='f-copyright'>
           <p className='copyright'>2023 Furniro. All rights reserved</p>
         </div>
-      </div>
     </footer>
   );
 }

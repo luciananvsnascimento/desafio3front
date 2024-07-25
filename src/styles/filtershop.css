@@ -1,45 +1,52 @@
-.filter{
+.filter {
     width: 100%;
     height: 100px;
-    background-color:#f9f1e7 ;
+    background-color: #f9f1e7;
     display: flex;
-    padding-inline: 5%;
     align-items: center;
     justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    padding: 5%; 
+    box-sizing: border-box;
+  }
   
-}
-
-.filter-options{
+  .filter-options {
     display: flex;
-    gap: 10px;
+    gap: 7px;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    height: fit-content;
-}
-
-
-.results-page{
+  }
+  
+  .results-info {
     display: flex;
-    gap: 10px;
-    justify-content: space-around;
     align-items: center;
+    gap: 7px;
+  }
+  
+  .results-page {
+    display: flex;
+    align-items: center;
+    gap: 7px;
     height: fit-content;
     flex-direction: row;
-}
-
-.input-show{
+  }
+  
+  .input-show {
     width: 55px;
     height: 55px;
-}
-
-.ctrl{
+    margin-left: 5px; 
+  }
+  
+  .ctrl {
     width: 16.33px;
     height: 16.33px;
-
-}
-
-.option-filter{
+  }
+  
+  .op-filter {
     width: 188px;
     height: 55px;
-}
+  }
+  
