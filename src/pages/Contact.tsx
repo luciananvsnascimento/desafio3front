@@ -1,5 +1,7 @@
 import BannerBenefits from '../components/BannerBenefits';
 import BannerPage from '../components/BannerPage';
+import SectionContact from '../components/SectionContact';
+
 const Contact = () => {
   return (
     <div>
@@ -7,6 +9,7 @@ const Contact = () => {
         namepage="Contact Us" 
         breadcrumb="Home > Contact"
       />
+      <SectionContact/>
     <BannerBenefits  />
    
     </div>

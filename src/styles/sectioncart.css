@@ -1,4 +1,4 @@
-.section-cart{
+.section-cart {
     width: 100%;
     display: flex;
     align-items: center;
@@ -6,77 +6,162 @@
     padding-block: 9%;
 }
 
-.cart-infos{
+.cart-infos {
     width: 90%;
-    height: 525px;
-    border: 1px;
-    background-color: aqua;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between; 
-}
-
-.order-product{
-    width: 65%;
-    height: 215px;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-totals{
-    width: 393px;
     height: 390px;
-    border: 1px 0px 0px 0px;
-    background-color: rgb(255, 0, 217);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.header-products{
+.order-product {
+    width: 65%;
+}
+
+.header-products {
     width: 100%;
-    height: 55px;
     display: flex;
-    align-items: center;
-    flex-direction: row;
     justify-content: space-between;
-    padding-left: 20%;
-    background-color: azure;
-}
-
-.image-product{
-    width: 108px;
-    height: 105px;
-    background-color: bisque;
-}
-
-.icon-delete{
-    width: 21px;
-    height: 21.88px;
-}
-
-.row-product{
-    background-color: brown;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.card-totals{
-    font-family: Poppins;
-    font-size: 32px;
+    padding: 15px;
+    background-color: #f9f1e7;
+    font-family: Poppins, sans-serif;
     font-weight: 600;
-    line-height: 48px;
-    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
     color: black;
 }
 
-.btn-checkout{
+.row-product {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.image-product {
+    width: 108px;
+    height: 105px;
+    background-color: bisque;
+    margin-right: 10px;
+}
+
+.product-name {
+    width: 200px;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    margin-right: 20px;
+}
+
+.product-price,
+.product-subtotal {
+    width: 150px;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #9F9F9F;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    margin-right: 20px;
+    border: #000 solid 1px;
+    border-radius: 8px ;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    border:none;
+}
+
+.quantity {
+    width: 40px;
+    text-align: center;
+}
+
+.icon-delete {
+    width: 21px;
+    height: 21.88px;
+    cursor: pointer;
+}
+
+.card-totals {
+    width: 30%;
+    height: 100%;
+    background-color: #f9f1e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+.cart-totals-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.totals-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000;
+}
+
+.subvalue, .total-value {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #9F9F9F;
+}
+
+.total-value {
+    color: #B88E2F;
+}
+
+.btn-checkout {
     width: 222px;
     height: 58.95px;
     border-radius: 15px;
-    border: 1px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+@media (max-width: 1028px)  {
+    .cart-infos {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+
+    .btn-checkout {
+        width: 100px;
+        height: 38.95px;
+    }
 }
