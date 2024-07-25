@@ -22,10 +22,7 @@ const CategoriesArea = () => {
                 <p className='cate-name'>Bathroom</p>
             </div>
             </div>
-            <div className='names-cate'>
-            
-           
-            
+            <div >
 
             </div>
             </div>
