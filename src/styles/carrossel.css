@@ -1,0 +1,8 @@
+.section-carrossel{
+    display: flex;
+    background-color: #FCF8F3 ;
+    flex-direction: row;
+    justify-content: right;
+    overflow: hidden;
+}
+

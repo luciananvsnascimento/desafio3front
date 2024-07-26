@@ -1,0 +1,12 @@
+.our-products{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    text-align: center;
+}
+
+.cards-area{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
