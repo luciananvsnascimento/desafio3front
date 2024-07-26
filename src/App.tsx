@@ -7,6 +7,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -22,6 +23,8 @@ const App: React.FC = () => {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        
       </Routes>
       <Footer />
     </Router>
