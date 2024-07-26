@@ -1,7 +1,125 @@
-.section-contact{
+.section-contact {
     width: 100%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
-    padding: 5%;
-    justify-content: space-between;
-}
+    align-items: center;
+  }
+  
+  .contact-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-text h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .contact-text p {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9F9F9F;
+  }
+  
+  .contact-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .contact-info {
+    padding: 20px;
+  }
+  
+  .contact-address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-address h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .contact-address p {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .field-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .field-contact label {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  .field-contact input,
+  .field-contact textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    gap: 12px;
+  }
+  
+  .field-contact textarea {
+    resize: vertical;
+  }
+  
+  .btn-contact {
+    width: 237px;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px;
+    background-color: #B88E2F;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-area {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .contact-info,
+    .contact-form {
+      margin-bottom: 0;
+    }
+  }
+  
