@@ -1,28 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '../styles/carrossel.css';
 
 interface Product {
   id: number;
-  sku: string;
-  title: string;
+  name: string;
   category: string;
-  tags: string[];
-  normalPrice: number;
-  salePrice: number;
-  discountPercentage: number;
-  new: boolean;
-  description: {
-    short: string;
-    long: string;
-  };
-  colors: {
-    name: string;
-    hex: string;
-  }[];
-  sizes: string[];
-  rating: number;
   images: {
     mainImage: string;
     gallery: string[];
@@ -30,38 +16,72 @@ interface Product {
 }
 
 interface CarrosselProps {
-  data: Product;
+  data: Product[];
 }
 
 const Carrossel: React.FC<CarrosselProps> = ({ data }) => {
+  const navigate = useNavigate();
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  };
+
+  const handleClick = () => {
+    navigate('/shop');
   };
 
   return (
-    <div className="section-carrossel">
-      <div className="title-carrossel">
-        <h2>50+ Beautiful rooms inspiration</h2>
-        <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
-        <button>Explore More</button>
+    <section className="section-carrossel">
+      <div className="txt-carrossel">
+        <h2>50+ Beautiful Rooms Inspiration</h2>
+        <p>Our designers have created many beautiful prototypes of rooms to inspire you.</p>
+        <button onClick={handleClick}>Explore More</button>
       </div>
-      <Slider {...settings}>
-        {data.images.gallery.map((image: string, index: number) => (
-          <div key={index} className="carrossel-item">
-            <img className='category' src={image} alt={`Slide ${index}`} />
-            <div className="description-image">
-              <h3>{data.title}</h3>
-              <p>{data.description.short}</p>
+      <Slider {...settings} className="carrossel-area">
+        {data.map((product, index) => (
+          <div key={index} className="img-carrossel" onClick={handleClick}>
+            <div className="img-container">
+              <img src={product.images.mainImage} alt={product.name} className="carrossel-img"
+               />
+               <div className="carrossel-info">
+                <span className="category-name">{product.category}</span>
+                <p className="name-product">{product.name}</p>
+              </div>
             </div>
+            
           </div>
         ))}
       </Slider>
-    </div>
+    </section>
   );
-}
+};
+
+const NextArrow = (props: any) => {
+  const { className, style, onClick } = props;
+  return (
+    <button
+      className={`${className} arrow-next`}
+      style={{ ...style, right: '10px' }}
+      onClick={onClick}
+    />
+  );
+};
+
+const PrevArrow = (props: any) => {
+  const { className, style, onClick } = props;
+  return (
+    <button
+      className={`${className} arrow-prev`}
+      style={{ ...style, left: '10px' }}
+      onClick={onClick}
+    />
+  );
+};
 
 export default Carrossel;

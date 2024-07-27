@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../styles/sectioncart.css';
 import idelete from '../assets/delete-icon.png';
 
