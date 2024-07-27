@@ -1,30 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/our-products.css';
 import CardProduct from '../components/CardProduct';
+import { Product } from '../types/Product';
 import { getProducts } from '../services/api';
-
-interface Product {
-  id: number;
-  sku: string;
-  title: string;
-  category: string;
-  tags: string[];
-  normalPrice: number;
-  salePrice: number;
-  discountPercentage: number;
-  new: boolean;
-  description: {
-    short: string;
-    long: string;
-  };
-  colors: { name: string; hex: string }[];
-  sizes: string[];
-  rating: number;
-  images: {
-    mainImage: string;
-    gallery: string[];
-  };
-}
 
 const OurProducts: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);

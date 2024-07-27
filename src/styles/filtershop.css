@@ -5,13 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-family: Poppins;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 24px;
     text-align: left;
     padding: 5%; 
     box-sizing: border-box;
+    color: black;
   }
   
   .filter-options {
@@ -38,15 +39,60 @@
     width: 55px;
     height: 55px;
     margin-left: 5px; 
+    border: none;
+  }
+
+  .ctrl-filter{
+    margin-right: 10px;
   }
   
   .ctrl {
     width: 16.33px;
     height: 16.33px;
+    
+  }
+  .type-filter{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    justify-content: center;
   }
   
   .op-filter {
     width: 188px;
     height: 55px;
+    border: none;
   }
-  
+
+.filter-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.filter-popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.category-filter {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+}
+
+.filter-popup button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

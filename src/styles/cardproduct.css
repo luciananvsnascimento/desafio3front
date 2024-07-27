@@ -21,7 +21,7 @@
 
 .card-product__title{
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 600;
     line-height: 28.8px;
     text-align: left;
@@ -30,7 +30,7 @@
 
 .card-product__description{
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 11px;
     font-weight: 500;
     line-height: 24px;
     text-align: left;
@@ -39,7 +39,7 @@
 
 .card-product__price{
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 30px;
     text-align: left;

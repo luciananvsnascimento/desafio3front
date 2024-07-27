@@ -7,6 +7,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-top: 1px solid #9f9f9f69 ;
   }
   
   .f-content {
