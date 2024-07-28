@@ -17,7 +17,7 @@ const Carrossel: React.FC<CarrosselProps> = ({ data }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -41,7 +41,7 @@ const Carrossel: React.FC<CarrosselProps> = ({ data }) => {
               <img src={product.images.mainImage} alt={product.title} className="carrossel-img" />
               <div className="carrossel-info">
                 <span className="category-name">{product.category}</span>
-                <p className="name-product">{product.title}</p>
+                <p className="title-products">{product.title}</p>
               </div>
             </div>
           </div>

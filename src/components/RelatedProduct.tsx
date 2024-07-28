@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import '../styles/related-product.css'
 import CardProduct from './CardProduct';
 import { Product } from '../types/Product';
 
@@ -28,7 +29,7 @@ const RelatedProduct: React.FC<RelatedProductProps> = ({ product }) => {
   }, [product]);
 
   return (
-    <div className="related-product">
+    <section className="related-product">
       <h2>Related Products</h2>
       <div className="cards-area">
         {relatedProducts.map((relatedProduct) => (
@@ -36,7 +37,7 @@ const RelatedProduct: React.FC<RelatedProductProps> = ({ product }) => {
         ))}
       </div>
       <button className='show-more'>Show More</button>
-    </div>
+    </section>
   );
 };
 

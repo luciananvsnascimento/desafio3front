@@ -1,6 +1,23 @@
 .related-product{
     display: flex;
-    width: 1440px;
-    height: 777px;
-    background-color: blueviolet;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center ;
+    justify-content: center;
+    padding-block: 5%; 
+    border-top: 1px solid #9f9f9f69 ;
 }    
+
+.show-more{
+    width: 245px;
+    height: 48px;
+    color: #B88E2F;
+    border: 1px solid #B88E2F;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 10%;
+}

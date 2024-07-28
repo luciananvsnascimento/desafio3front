@@ -1,9 +1,17 @@
 .description-area {
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center ;
+  justify-content: center;
+  padding-block: 2%; 
+  border-top: 1px solid #9f9f9f69 ;
   }
   
   .title-area {
     display: flex;
+    width: 80%;
     justify-content: space-around;
     margin-bottom: 20px;
   }
@@ -13,6 +21,7 @@
     font-weight: bold;
     cursor: pointer;
     padding: 10px;
+    color: #000;
   }
   
   .title.active {
@@ -20,14 +29,24 @@
   }
   
   .description {
+    width: 80%;
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    color: #9F9F9F;
+
   }
   
   .images-product {
     display: flex;
     justify-content: space-around;
+    width: 95%;
+    max-height: 400px;
   }
   
   .product-image {

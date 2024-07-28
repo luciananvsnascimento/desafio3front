@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import NavigateProduct from '../components/NavigateProduct';
 import DescriptionProduct from "../components/DescriptionProduct";
 import ProductArea from "../components/ProductArea";
 import RelatedProduct from "../components/RelatedProduct";
@@ -29,6 +30,7 @@ const ProductPage: React.FC = () => {
 
   return (
     <div>
+      <NavigateProduct productName={product.title} />
       <ProductArea product={product} />
       <DescriptionProduct product={product} />
       <RelatedProduct product={product} />

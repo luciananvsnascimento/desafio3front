@@ -3,15 +3,14 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    padding-block: 8%;
+    padding-block: 5%;
     flex-direction: column;
-
 }
 
 .text-furniture{
     text-align: center;
-
 }
+
 .share{
     font-family: Poppins;
     font-size: 20px;
