@@ -14,14 +14,14 @@ const OurProducts: React.FC = () => {
   }, []);
 
   return (
-    <div className="our-products">
+    <section className="our-products">
       <h2>Our Products</h2>
       <div className="cards-area">
         {products.slice(0, 8).map((product) => (
           <CardProduct key={product.id} product={product} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

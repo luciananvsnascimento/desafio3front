@@ -3,7 +3,6 @@ import SectionCart from '../components/SectionCart'
 const Cart = () => {
   return (
     <div>
-         
          <SectionCart />
          <BannerBenefits />
     </div>

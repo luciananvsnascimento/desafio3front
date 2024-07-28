@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/header.css'
 import '../styles/global.css'
 import logo from '/src/assets/furniro_logo.png';
 import loginIcon from '/src/assets/perfil.png';
 import cartIcon from '/src/assets/carrinho.png';
+import CartModal from './CartModal';
+import { Product } from '../types/Product';
 
 const Header: React.FC = () => {
+  const [isCartVisible, setCartVisible] = useState(false);
+  const cart: Product[] = []; // Seu array de produtos no carrinho
+
+  const handleMouseEnter = () => {
+    setCartVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setCartVisible(false);
+  };
+
   return (
     <header className="header">
       <nav className="nav">
@@ -35,9 +48,14 @@ const Header: React.FC = () => {
           <Link to="/login">
             <img src={loginIcon} alt="Login" className="icon" />
           </Link>
-          <Link to="/cart">
+          <div 
+            className="cart-icon-container" 
+            onMouseEnter={handleMouseEnter} 
+            onMouseLeave={handleMouseLeave}
+          >
             <img src={cartIcon} alt="Cart" className="icon" />
-          </Link>
+            <CartModal cart={cart} isVisible={isCartVisible} onClose={() => setCartVisible(false)} />
+          </div>
         </div>
       </nav>
     </header>

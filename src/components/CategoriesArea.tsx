@@ -1,4 +1,4 @@
-import '../styles/categoriesarea.css';
+import '../styles/categories-area.css';
 
 const CategoriesArea = () => {
   return (

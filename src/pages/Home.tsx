@@ -6,9 +6,6 @@ const Home = () => {
     <div>
       <Hero />
       <SectionHome/>
-      
-  
-
     </div>
   )
 }

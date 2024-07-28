@@ -1,30 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/section-home.css';
+import axios from 'axios';
+import { Product } from '../types/Product';
 import CategoriesArea from '../components/CategoriesArea';
 import OurProducts from '../components/OurProducts';
 import Carrossel from './Carrossel';
 import FurtureHome from './FurtureHome';
+import '../styles/section-home.css';
 
-interface Product {
-  id: number;
-  name: string;
-  category: string;
-  images: {
-    mainImage: string;
-    gallery: string[];
-  };
-}
 
-const SectionHome = () => {
+const SectionHome: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/products')
-      .then(response => response.json())
-      .then(data => {
-        console.log("Data fetched: ", data); // Log the fetched data
-        const selectedProducts = data.sort(() => 0.5 - Math.random()).slice(0, 6);
+    axios.get('http://localhost:3001/products')
+      .then(response => {
+        console.log("Data fetched: ", response.data);
+        const selectedProducts = response.data.sort(() => 0.5 - Math.random()).slice(0, 6);
         setProducts(selectedProducts);
+      })
+      .catch(error => {
+        console.error("Error fetching data: ", error);
       });
   }, []);
 
@@ -36,6 +31,6 @@ const SectionHome = () => {
       <FurtureHome />
     </section>
   );
-}
+};
 
 export default SectionHome;

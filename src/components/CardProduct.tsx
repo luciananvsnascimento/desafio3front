@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/cardproduct.css'
+import { useNavigate } from 'react-router-dom';
+import '../styles/cardproduct.css';
 import { Product } from '../types/Product';
 
 interface CardProductProps {
@@ -7,8 +8,14 @@ interface CardProductProps {
 }
 
 const CardProduct: React.FC<CardProductProps> = ({ product }) => {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(`/productpage/${product.id}`);
+  };
+
   return (
-    <div className="card">
+    <div className="card" onClick={handleCardClick}>
       <img className="card-image-product" src={product.images.mainImage} alt={product.title} />
       <div className="card-product_info">
         <h2 className="card-product__title">{product.title}</h2>

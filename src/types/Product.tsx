@@ -19,4 +19,5 @@ export interface Product {
     mainImage: string;
     gallery: string[];
   };
+  quantity?: number; 
 }

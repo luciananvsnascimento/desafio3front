@@ -19,7 +19,7 @@ const RelatedProduct: React.FC<RelatedProductProps> = ({ product }) => {
         (p) =>
           p.id !== product.id &&
           (p.category === product.category || p.tags.some((tag) => product.tags.includes(tag)))
-      ).slice(0, 4); 
+      ).slice(0, 4);
 
       setRelatedProducts(related);
     };

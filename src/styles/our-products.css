@@ -3,10 +3,30 @@
     flex-direction: column;
     padding: 2%;
     text-align: center;
+    overflow: hidden;
 }
 
-.cards-area{
-    display:grid;
-    grid-template-columns: auto auto auto auto;
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-}
+  }
+
+@media (max-width: 1028px) {
+    .cards-area {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards-area {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .cards-area {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
