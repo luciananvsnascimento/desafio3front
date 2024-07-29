@@ -1,6 +1,49 @@
+import React, { useState } from 'react';
 import '../styles/sectioncontact.css';
 
 const SectionContact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validateForm = () => {
+    const formErrors: { [key: string]: string } = {};
+    if (!formData.name) formErrors.name = 'Name is required';
+    if (!formData.email) formErrors.email = 'Email is required';
+    if (!formData.message) formErrors.message = 'Message is required';
+
+    setErrors(formErrors);
+    return Object.keys(formErrors).length === 0;
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (validateForm()) {
+      console.log('Form data submitted:', formData);
+
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+
+      alert('Formulário enviado com sucesso!');
+    } else {
+      alert('Por favor, preencha todos os campos obrigatórios.');
+    }
+  };
+
   return (
     <section className="section-contact">
       <div className='contact-text'>
@@ -25,22 +68,52 @@ const SectionContact = () => {
           </div>
         </div>
         <div className="contact-form">
-          <form className='form-contact'>
+          <form className='form-contact' onSubmit={handleSubmit}>
             <div className='field-contact'>
               <label>Your Name</label>
-              <input type="text" placeholder="Abc" />
+              <input 
+                type="text" 
+                name="name" 
+                value={formData.name}
+                onChange={handleInputChange}
+                placeholder="Abc" 
+                required
+              />
+              {errors.name && <span className="error">{errors.name}</span>}
             </div>
             <div className='field-contact'>
               <label>Email Address</label>
-              <input type="email" placeholder="Abc@def.com" />
+              <input 
+                type="email" 
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="Abc@def.com" 
+                required
+              />
+              {errors.email && <span className="error">{errors.email}</span>}
             </div>
             <div className='field-contact'>
               <label>Subject</label>
-              <input type="text" placeholder="This is optional" />
+              <input 
+                type="text" 
+                name="subject"
+                value={formData.subject}
+                onChange={handleInputChange}
+                placeholder="This is optional" 
+              />
             </div>
             <div className='field-contact'>
               <label>Message</label>
-              <textarea placeholder="Hi! I'd like to ask about" rows={4}></textarea>
+              <textarea 
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                placeholder="Hi! I'd like to ask about" 
+                rows={4} 
+                required
+              ></textarea>
+              {errors.message && <span className="error">{errors.message}</span>}
             </div>
             <button className='btn-contact' type="submit">Submit</button>
           </form>
