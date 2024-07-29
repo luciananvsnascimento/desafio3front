@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/sectioncart.css';
-import idelete from '../assets/delete-icon.png';
+import deleteIcon from '../assets/delete-icon.png';
 
 const initialCart = [
   {
@@ -57,7 +57,7 @@ const SectionCart: React.FC = () => {
               </div>
               <span className='product-subtotal'>Rs. {(product.salePrice * product.quantity).toFixed(2)}</span>
               <div className='delete' onClick={() => handleRemove(product.id)}>
-                <img className='icon-delete' src={idelete} alt="Delete" />
+                <img className='icon-delete' src={deleteIcon} alt="Delete" />
               </div>
             </div>
           ))}
@@ -77,6 +77,6 @@ const SectionCart: React.FC = () => {
       </div>
     </section>
   );
-}
+};
 
 export default SectionCart;

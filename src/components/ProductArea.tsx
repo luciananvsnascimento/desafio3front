@@ -1,12 +1,31 @@
-import React from 'react';
-import '../styles/product-area.css';
+// src/components/ProductArea.tsx
+
+import React, { useState } from 'react';
 import { Product } from '../types/Product';
+import '../styles/product-area.css';
 
 interface ProductAreaProps {
   product: Product;
 }
 
 const ProductArea: React.FC<ProductAreaProps> = ({ product }) => {
+  const [quantity, setQuantity] = useState<number>(1);
+
+  const handleDecrease = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
+  const handleIncrease = () => {
+    setQuantity(quantity + 1);
+  };
+
+  const handleAddToCart = () => {
+    console.log(`Added ${quantity} of ${product.title} to the cart.`);
+    // Lógica para adicionar ao carrinho
+  };
+
   return (
     <div className="section-product">
       <div className="image-gallery">
@@ -44,26 +63,26 @@ const ProductArea: React.FC<ProductAreaProps> = ({ product }) => {
           ))}
         </div>
         <div className='btns'>
-        <div className='quantity-control'>
-          <button className='quantity-btn'>-</button>
-          <p className='quantity'>1</p>
-          <button className='quantity-btn'>+</button>
-        </div>
-        <button className="add-cart">Add To Cart</button>
+          <div className='quantity-control'>
+            <button className='quantity-btn' onClick={handleDecrease}>-</button>
+            <p className='quantity'>{quantity}</p>
+            <button className='quantity-btn' onClick={handleIncrease}>+</button>
+          </div>
+          <button className="add-cart" onClick={handleAddToCart}>Add To Cart</button>
         </div>
         <hr />
         <div className="additional-info">
           <div className="info-item">
-            <span className="label">SKU:    </span>
-            <span className="value">{product.sku} </span>
+            <span className="label">SKU: </span>
+            <span className="value">{product.sku}</span>
           </div>
           <div className="info-item">
             <span className="label">Category: </span>
-            <span className="value">{product.category} </span>
+            <span className="value">{product.category}</span>
           </div>
           <div className="info-item">
             <span className="label">Tags: </span>
-            <span className="value">{product.tags.join(', ')} </span>
+            <span className="value">{product.tags.join(', ')}</span>
           </div>
           <div className="info-item">
             <span className="label">Share: </span>
@@ -72,10 +91,10 @@ const ProductArea: React.FC<ProductAreaProps> = ({ product }) => {
                 <img src='https://img.icons8.com/ios/50/000000/facebook-new.png' className='icon-sm' alt='Facebook' />
               </a>
               <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
-                <img src='https://img.icons8.com/ios/50/000000/instagram-new.png'className='icon-sm' alt='Instagram' />
+                <img src='https://img.icons8.com/ios/50/000000/instagram-new.png' className='icon-sm' alt='Instagram' />
               </a>
               <a href='https://twitter.com/' target='_blank' rel='noreferrer'>
-                <img src='https://img.icons8.com/ios/50/000000/twitter.png'className='icon-sm' alt='Twitter' />
+                <img src='https://img.icons8.com/ios/50/000000/twitter.png' className='icon-sm' alt='Twitter' />
               </a>
             </div>
           </div>

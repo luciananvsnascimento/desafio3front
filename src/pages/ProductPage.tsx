@@ -10,6 +10,7 @@ import { Product } from '../types/Product';
 const ProductPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -17,6 +18,7 @@ const ProductPage: React.FC = () => {
         const response = await axios.get(`http://localhost:3001/products/${id}`);
         setProduct(response.data);
       } catch (error) {
+        setError("Error fetching product data. Please try again later.");
         console.error("Error fetching product data:", error);
       }
     };
@@ -24,8 +26,12 @@ const ProductPage: React.FC = () => {
     fetchProduct();
   }, [id]);
 
+  if (error) {
+    return <div>{error}</div>;
+  }
+
   if (!product) {
-    return <div>Loading...</div>;
+    return <div className="loading-spinner">Loading...</div>; 
   }
 
   return (

@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding-top: 5%;
+  padding-block: 2%;
+  padding-left: 2%;
   align-items: center;
   overflow: hidden;
   justify-content: space-between;
+  position: relative; 
 }
 
 .txt-carrossel {
@@ -68,6 +70,8 @@
   overflow: hidden;
   object-fit: cover;
   margin-right: 30px;
+  height: 100%;
+
 }
 
 .category-name {
@@ -89,20 +93,20 @@
 }
 
 .carrossel-area {
-  width: 1000px;
+  width: 900px;
   height: 582px;
   display: flex;
   flex-direction: row;
   overflow: hidden;
   align-items: center;
-  padding-left: 10%;
+  margin-left: 20px;
 }
 
 .slick-dots {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -111,8 +115,15 @@
   margin: 0 10px;
 }
 
-.slick-dots li button:before {
-  color: #b88e2f;
+.slick-dots li button {
+  padding: 2px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #b88e2f;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #b88e2f;
 }
 
 .carrossel-img {
@@ -125,32 +136,34 @@
   flex-basis: 30%;
 }
 
-.slick-next::before,
-.slick-prev::before {
-  color: #ffffff;
-}
-
-.arrow-next,
-.arrow-prev {
+.slick-next,
+.slick-prev {
   width: 48px;
   height: 48px;
+  border-radius: 50%;
   background-color: #b88e2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b88e2f;
+  font-size: 24px;
+  border: none;
 }
 
 .arrow-prev {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 10px;
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .arrow-next {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 10px;
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (max-width: 1028px) {
@@ -165,5 +178,26 @@
   .carrossel-img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .txt-carrossel h2 {
+    font-size: 24px;
+  }
+
+  .txt-carrossel p {
+    font-size: 14px;
+  }
+
+  .txt-carrossel button {
+    width: 150px;
+    height: 40px;
+  }
+
+  .slick-dots li button {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #b88e2f;
   }
 }

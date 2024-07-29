@@ -46,10 +46,32 @@ const BillingForm = () => {
     }
   };
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    console.log('Form data submitted:', formData);
+
+    setFormData({
+      firstName: '',
+      lastName: '',
+      companyName: '',
+      zipCode: '',
+      country: '',
+      address: '',
+      city: '',
+      province: '',
+      addonAddress: '',
+      email: '',
+      additional: ''
+    });
+
+    alert('Formulário enviado com sucesso!');
+  };
+
   return (
     <div className="billing-form">
       <h2>Billing details</h2>
-      <form className="billing-form-content">
+      <form className="billing-form-content" onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group form-group-half">
             <label htmlFor="first-name">First Name</label>
@@ -59,6 +81,7 @@ const BillingForm = () => {
               name="firstName"
               value={formData.firstName}
               onChange={handleInputChange}
+              required
             />
           </div>
           <div className="form-group form-group-half">
@@ -69,6 +92,7 @@ const BillingForm = () => {
               name="lastName"
               value={formData.lastName}
               onChange={handleInputChange}
+              required
             />
           </div>
         </div>
@@ -90,6 +114,7 @@ const BillingForm = () => {
             name="zipCode"
             value={formData.zipCode}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div className="form-group full-width">
@@ -110,6 +135,7 @@ const BillingForm = () => {
             name="address"
             value={formData.address}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div className="form-group full-width">
@@ -120,6 +146,7 @@ const BillingForm = () => {
             name="city"
             value={formData.city}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div className="form-group full-width">
@@ -150,10 +177,11 @@ const BillingForm = () => {
             name="email"
             value={formData.email}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div className="form-group full-width">
-          <label htmlFor="additional"></label>
+          <label htmlFor="additional">Additional Information</label>
           <input
             type="text"
             id="additional"
