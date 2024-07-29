@@ -30,7 +30,7 @@ const RelatedProduct: React.FC<RelatedProductProps> = ({ product }) => {
 
   return (
     <section className="related-product">
-      <h2>Related Products</h2>
+      <p className='title-related'>Related Products</p>
       <div className="cards-area">
         {relatedProducts.map((relatedProduct) => (
           <CardProduct key={relatedProduct.id} product={relatedProduct} />

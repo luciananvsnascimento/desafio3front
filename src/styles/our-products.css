@@ -1,16 +1,20 @@
 .our-products{
     display: flex;
     flex-direction: column;
-    padding-bottom: 8%;
-    padding-inline: 5%;
+    padding-bottom: 5%;
+    padding-inline: 8%;
     text-align: center;
     overflow: hidden;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
 }
 
 .cards-area {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    justify-content: space-between;
   }
 
 @media (max-width: 1028px) {

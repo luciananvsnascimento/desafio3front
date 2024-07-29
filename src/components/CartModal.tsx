@@ -30,7 +30,7 @@ const CartModal: React.FC<CartModalProps> = ({ cart, isVisible, onClose }) => {
               <img src={product.images.mainImage} alt={product.title} className="cart-item-image" />
               <div className="cart-item-details">
                 <p className="cart-item-title">{product.title}</p>
-                <p className="cart-item-price">1 x Rs. {product.salePrice.toFixed(2)}</p>
+                <p className="cart-item-price">{product.quantity} x Rs. {product.salePrice.toFixed(2)}</p>
               </div>
               <button className="delete-btn">
                 <img src={deleteIcon} alt="Delete" />

@@ -75,7 +75,7 @@ footer {
     height: 242px;
   }
   
-  .title {
+  .title-footer {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
@@ -83,7 +83,7 @@ footer {
     color: #9F9F9F;    
   }
   
-  li {
+  .menu1, .menu2 li {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
@@ -135,7 +135,7 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .social-medias a {
     display: flex;
     align-items: center;
@@ -143,6 +143,7 @@ footer {
     width: 34px;
     height: 34px;
     background-color: white;
+    color: #000;
     border-radius: 50%;
     border: 1px solid #dcdcdc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);

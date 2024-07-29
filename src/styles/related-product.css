@@ -6,8 +6,19 @@
     align-items: center ;
     justify-content: center;
     padding-block: 5%; 
+    padding-inline: 5%;
     border-top: 1px solid #9f9f9f69 ;
 }    
+
+.title-related{
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 54px;
+    text-align: left;
+    color: black;
+    margin-bottom:10px ;
+}
 
 .show-more{
     width: 245px;
@@ -19,5 +30,5 @@
     font-weight: 600;
     line-height: 24px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }

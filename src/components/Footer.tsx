@@ -1,3 +1,4 @@
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import '../styles/footer.css';
 import '../styles/global.css';
 
@@ -12,50 +13,47 @@ const Footer = () => {
           </p>
           <div className='social-medias'>
             <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'>
-              <img src='https://img.icons8.com/ios/50/000000/facebook-new.png' alt='Facebook' />
+              <FaFacebookF />
             </a>
             <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
-              <img src='https://img.icons8.com/ios/50/000000/instagram-new.png' alt='Instagram' />
+              <FaInstagram />
             </a>
             <a href='https://twitter.com/' target='_blank' rel='noreferrer'>
-              <img src='https://img.icons8.com/ios/50/000000/twitter.png' alt='Twitter' />
+              <FaTwitter />
             </a>
             <a href='https://www.linkedin.com/' target='_blank' rel='noreferrer'>
-              <img src='https://img.icons8.com/ios/50/000000/linkedin.png' alt='LinkedIn' />
+              <FaLinkedinIn />
             </a>
           </div>
         </div>
         <div className='f-info'>
           <div className='f-menus'>
             <ul className='menu1'>
-              <span className='title'>Links</span>
+              <span className='title-footer'>Links</span>
               <li>Home</li>
               <li>Shop</li>
               <li>About</li>
               <li>Contact</li>
             </ul>
             <ul className='menu2'>
-              <span className='title'>Help</span>
+              <span className='title-footer'>Help</span>
               <li>Payment Options</li>
               <li>Returns</li>
               <li>Privacy Policies</li>
             </ul>
           </div>
-          
         </div>
         <div className="footer-section">
-            <span className='title'>Newsletter</span>
-            <form className="newsletter-form">
-              <input type="email" placeholder="Enter Your Email Address" />
-              <button type="submit">SUBSCRIBE</button>
-            </form>
-          </div>
-        
-        
+          <span className='title-footer'>Newsletter</span>
+          <form className="newsletter-form">
+            <input type="email" placeholder="Enter Your Email Address" />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
       </div>
       <div className='f-copyright'>
-          <p className='copyright'>2023 Furniro. All rights reserved</p>
-        </div>
+        <p className='copyright'>2023 Furniro. All rights reserved</p>
+      </div>
     </footer>
   );
 }

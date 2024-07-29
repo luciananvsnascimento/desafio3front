@@ -52,6 +52,7 @@ const FilterShop: React.FC<FilterShopProps> = ({ onFilterChange, onProductsPerPa
             <option value="Cadeiras">Cadeiras</option>
             <option value="Armarios">Armários</option>
             <option value="Escrivaninhas">Escrivaninhas</option>
+            <option value="Racks">Racks</option>
           </select>
         </div>
       )}

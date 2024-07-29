@@ -1,6 +1,6 @@
 // src/components/ProductArea.tsx
-
 import React, { useState } from 'react';
+import { useCart } from '../contexts/CartContext';
 import { Product } from '../types/Product';
 import '../styles/product-area.css';
 
@@ -9,6 +9,7 @@ interface ProductAreaProps {
 }
 
 const ProductArea: React.FC<ProductAreaProps> = ({ product }) => {
+  const { addToCart } = useCart();
   const [quantity, setQuantity] = useState<number>(1);
 
   const handleDecrease = () => {
@@ -22,8 +23,9 @@ const ProductArea: React.FC<ProductAreaProps> = ({ product }) => {
   };
 
   const handleAddToCart = () => {
+    const productToAdd = { ...product, quantity };
+    addToCart(productToAdd);
     console.log(`Added ${quantity} of ${product.title} to the cart.`);
-    // Lógica para adicionar ao carrinho
   };
 
   return (

@@ -6,11 +6,11 @@ import logo from '/src/assets/furniro_logo.png';
 import loginIcon from '/src/assets/perfil.png';
 import cartIcon from '/src/assets/carrinho.png';
 import CartModal from './CartModal';
-import { Product } from '../types/Product';
+import { useCart } from '../contexts/CartContext';
 
 const Header: React.FC = () => {
   const [isCartVisible, setCartVisible] = useState(false);
-  const cart: Product[] = [];
+  const { cart } = useCart();
   const navigate = useNavigate();
 
   const handleMouseEnter = () => {

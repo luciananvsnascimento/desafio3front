@@ -21,6 +21,7 @@ const OurProducts: React.FC = () => {
           <CardProduct key={product.id} product={product} />
         ))}
       </div>
+      <button className='show-more'>Show More</button>
     </section>
   );
 };
