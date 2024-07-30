@@ -1,71 +1,155 @@
 .card {
-    width: 270px;
-    height: 450px; 
-    position: relative; 
-    overflow-y: hidden; 
-    background-color: aqua; 
+  width: 270px;
+  height: 450px;
+  gap: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image-product {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.card-product_info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background-color: #F4F5F7;
+  padding: 5%;
+  text-align: left;
+  color: #3A3A3A;
+}
+
+.card-product__title {
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  margin: 0;
+}
+
+.card-product__description {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.card-product__price {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.card-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card:hover .card-hover-overlay {
+  opacity: 1;
+}
+
+.card-hover-content {
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.add-to-cart{
+  background-color: white;
+  color: #B88E2F;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.actions-card{
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.card-action-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.actions-card {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .section-shop {
+    padding: 4%;
   }
-  
-  .card-image-product {
-    width: 100%; 
-    height: 70%;
-  }
-  
-  .card-product_info {
-    position: absolute; 
-    bottom: 0; 
-    width: 100%; 
-    height: 40%; 
-    background-color: #F4F5F7;
-    padding: 5%;
-    text-align: left;
-    color: #3A3A3A; 
-  }
-  
-  .card-product__title {
-    font-family: Poppins;
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 28.8px;
-    text-align: left;
-  }
-  
-  .card-product__description {
-    font-family: Poppins;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: left;
-  }
-  
-  .card-product__price {
-    font-family: Poppins;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: left;
-  }
-  
-  .card-hover-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+  .card {
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    height: auto;
   }
-  
-  .card:hover .card-hover-overlay {
-    opacity: 1;
+
+  .card-image-product {
+    height: 60%;
   }
-  
-  .card-hover-content {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 5px; 
+
+  .card-product_info {
+    position: relative;
+    height: 40%;
+    padding: 10px;
   }
+
+  .card-product__title {
+    font-size: 16px;
+  }
+
+  .card-product__description {
+    font-size: 10px;
+  }
+
+  .card-product__price {
+    font-size: 14px;
+  }
+}

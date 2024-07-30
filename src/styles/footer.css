@@ -1,9 +1,10 @@
 footer {
     width: 100%;
     height: fit-content;
-    padding-block: 5%;
+    padding-block: 2%;
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -13,6 +14,7 @@ footer {
   .f-content {
     width: 90%;
     height:fit-content;
+    padding: 30px;
     display: flex;
     align-items: start;
     flex-wrap: wrap;
@@ -21,7 +23,7 @@ footer {
   }
   
   .f-box {
-    height: 210px;
+    height: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,8 +54,8 @@ footer {
 
   
   .f-menus {
-    width: 352px;
-    height: 312px;
+    width: 300px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -172,3 +174,9 @@ footer {
     color: black;
   }
   
+@media(max-width: 1028px){
+  .f-content{
+    display: flex;
+    gap: 20px;
+  }
+}

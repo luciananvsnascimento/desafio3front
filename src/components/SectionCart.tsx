@@ -1,4 +1,3 @@
-// src/components/SectionCart.tsx
 import React from 'react';
 import { useCart } from '../contexts/CartContext';
 import '../styles/section-cart.css';
@@ -32,6 +31,7 @@ const SectionCart: React.FC = () => {
       <div className='cart-infos'>
         <div className='order-product'>
           <div className='header-products'>
+            <p className='text header-item'></p>
             <p className='text header-item'>Product</p>
             <p className='text header-item'>Price</p>
             <p className='text header-item'>Quantity</p>

@@ -30,7 +30,7 @@ const Header: React.FC = () => {
       <nav className="nav">
         <div className="logo">
           <Link to="/">
-            <img src={logo} alt="Logo" />
+            <img className='logo-furniro' src={logo} alt="Logo" />
           </Link>
         </div>
         <div className="nav-links">

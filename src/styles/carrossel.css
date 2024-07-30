@@ -113,6 +113,7 @@
 
 .slick-dots li {
   margin: 0 10px;
+ 
 }
 
 .slick-dots li button {
@@ -120,6 +121,7 @@
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid #b88e2f;
+  
 }
 
 .slick-dots li.slick-active button {

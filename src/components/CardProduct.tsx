@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/cardproduct.css';
+import { FaShareAlt, FaExchangeAlt, FaHeart } from 'react-icons/fa';
 import { Product } from '../types/Product';
 
 interface CardProductProps {
@@ -14,11 +15,15 @@ const CardProduct: React.FC<CardProductProps> = ({ product }) => {
     navigate(`/productpage/${product.id}`);
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [isHovered, setIsHovered] = React.useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="card" onClick={handleCardClick}>
+    <div
+      className="card"
+      onClick={handleCardClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <img className="card-image-product" src={product.images.mainImage} alt={product.title} />
       <div className="card-product_info">
         <h2 className="card-product__title">{product.title}</h2>
@@ -29,11 +34,17 @@ const CardProduct: React.FC<CardProductProps> = ({ product }) => {
       {isHovered && (
         <div className="card-hover-overlay">
           <div className="card-hover-content">
-            <button className="add-to-cart-button">Add to Cart</button>
+            <button className="add-to-cart">Add to Cart</button>
             <div className="card-action-icons">
-              <i className="icon share"></i>
-              <i className="icon compare"></i>
-              <i className="icon like"></i>
+              <p className="actions-card">
+              <FaShareAlt className="icon-action" />Share 
+              </p>
+              <p className="actions-card">
+              <FaExchangeAlt className="icon-action" />Compare 
+              </p>
+              <p className="actions-card">
+              <FaHeart className="icon-action" />Like 
+              </p>
             </div>
           </div>
         </div>

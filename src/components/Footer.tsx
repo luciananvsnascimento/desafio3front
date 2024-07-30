@@ -18,7 +18,7 @@ const Footer = () => {
             <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
               <FaInstagram />
             </a>
-            <a href='https://twitter.com/' target='_blank' rel='noreferrer'>
+            <a href='https://x.com/' target='_blank' rel='noreferrer'>
               <FaTwitter />
             </a>
             <a href='https://www.linkedin.com/' target='_blank' rel='noreferrer'>
