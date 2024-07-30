@@ -36,7 +36,7 @@
     {
       "id": 2,
       "sku": "760330",
-      "title": "Rack para TV até 75 Polegadas Madesa Reims 2 Portas 1 Gaveta - Branco",
+      "title": "Rack Madesa Reims - Branco",
       "category": "Racks",
       "tags": ["Rack", "Rack-Fortaleza", "Sala"],
       "normalPrice": 1079.99,
@@ -68,7 +68,7 @@
     {
       "id": 3,
       "sku": "1185191",
-      "title": "Rack para TV até 75 Polegadas Charlotte 2 PT Carvalho e Verde Menta 180 cm",
+      "title": "Rack Charlotte Carvalho e Verde Menta",
       "category": "Racks",
       "tags": ["Rack", "Carvalho", "Verde Menta", "Sala"],
       "normalPrice": 859.99,
@@ -101,7 +101,7 @@
     {
       "id": 4,
       "sku": "1133908",
-      "title": "Rack Bancada Suspensa 183 cm TV 75 Pol 2891 Fenddi Naturale MDT",
+      "title": "Rack Bancada Suspensa Fenddi Naturale MDT",
       "category": "Racks",
       "tags": ["Rack", "Bancada Suspensa", "Sala"],
       "normalPrice": 439.0,
@@ -134,7 +134,7 @@
     {
       "id": 5,
       "sku": "522361",
-      "title": "Rack Classic I 2 GV Off White com Freijó Touch 218 cm",
+      "title": "Rack Classic Off White com Freijó Touch",
       "category": "Racks",
       "tags": ["Rack", "Off White", "Freijó Touch", "Sala"],
       "normalPrice": 1087.99,
@@ -171,7 +171,7 @@
     {
       "id": 6,
       "sku": "1011823",
-      "title": "Rack Vivare Preto e Freijó 180 cm",
+      "title": "Rack Vivare Preto e Freijó",
       "category": "Racks",
       "tags": ["Rack", "Preto", "Freijó", "Sala"],
       "normalPrice": 1014.99,
@@ -208,7 +208,7 @@
     {
       "id": 7,
       "sku": "939470",
-      "title": "Rack para TV até 65 Polegadas com Pés Preto Turim Madesa",
+      "title": "Rack Turim Madesa",
       "category": "Racks",
       "tags": ["Rack", "Retrô", "Pés de Madeira", "Sala"],
       "normalPrice": 439.98,
@@ -284,7 +284,7 @@
     {
       "id": 9,
       "sku": "1051175",
-      "title": "Rack 2 Portas Ditália R-606 Branco",
+      "title": "Rack 2 Portas Ditália Branco",
       "category": "Racks",
       "tags": ["Sala de Estar", "Móveis"],
       "normalPrice": 313.41,
@@ -323,7 +323,7 @@
     {
       "id": 10,
       "sku": "1185189",
-      "title": "Rack para TV até 60 Polegadas Theo Cinamomo e Off White 133 cm",
+      "title": "Rack Theo Cinamomo e Off White",
       "category": "Racks",
       "tags": ["Rack", "Theo", "Cinamomo", "Off White", "Sala"],
       "normalPrice": 629.99,
@@ -361,7 +361,7 @@
     {
       "id": 11,
       "sku": "531871",
-      "title": "Sofá-Cama 2 Lugares Casal Génova Azul",
+      "title": "Sofá-Cama Casal Génova Azul",
       "category": "Sofás",
       "tags": ["Sofá-cama", "Sala", "Quarto"],
       "normalPrice": 3199.99,
@@ -394,7 +394,7 @@
     {
       "id": 12,
       "sku": "204089",
-      "title": "Sofá-Cama 3 Lugares Casal Premium Suede Cinza",
+      "title": "Sofá-Cama Casal Premium Suede Cinza",
       "category": "Sofás",
       "tags": ["Sofá-cama", "Sala", "Quarto"],
       "normalPrice": 1705.99,
@@ -426,7 +426,7 @@
     {
       "id": 13,
       "sku": "531875",
-      "title": "Sofá-Cama 3 Lugares Casal Córsega Cinza Escuro",
+      "title": "Sofá-Cama Casal Córsega Cinza Escuro",
       "category": "Sofás",
       "tags": ["Sofá-cama", "Sala", "Quarto"],
       "normalPrice": 3119.99,
@@ -459,7 +459,7 @@
     {
       "id": 14,
       "sku": "531875",
-      "title": "Sofá-Cama 3 Lugares Casal Venice Amarelo",
+      "title": "Sofá-Cama Casal Venice Amarelo",
       "category": "Sofás",
       "tags": ["Sofá-cama", "Sala", "Quarto"],
       "normalPrice": 4229.99,
@@ -491,7 +491,7 @@
     {
       "id": 15,
       "sku": "1147903",
-      "title": "Sofá Retrátil Sem Caixa 3 lugares Solomons Linho Bege",
+      "title": "Sofá Retrátil Solomons Linho Bege",
       "category": "Sofás",
       "tags": ["Sofá Retrátil", "Sala"],
       "normalPrice": 4409.99,
@@ -524,7 +524,7 @@
     {
       "id": 16,
       "sku": "1147875",
-      "title": "Sofá 3 Lugares Retrátil e Reclinável Lupin Linho Cru",
+      "title": "Sofá Retrátil e Reclinável Lupin Linho Cru",
       "category": "Sofás",
       "tags": ["Sofá Retrátil", "Sala"],
       "normalPrice": 3749.99,
@@ -557,7 +557,7 @@
     {
       "id": 17,
       "sku": "785346",
-      "title": "Sofá 3 Lugares Belgrado com Chaise Direito Linho Cinza 230 cm",
+      "title": "Sofá Belgrado Chaise Direito Linho Cinza",
       "category": "Sofás",
       "tags": ["Sofá Retrátil", "Sala"],
       "normalPrice": 4049.99,
@@ -589,7 +589,7 @@
     {
       "id": 18,
       "sku": "623883",
-      "title": "Sofá Retrátil e Reclinável 3 Lugares Blenda II Suede Grafite",
+      "title": "Sofá Retrátil e Reclinável Suede Grafite",
       "category": "Sofás",
       "tags": ["Sofá Retrátil", "Sala"],
       "normalPrice": 2092.99,
@@ -621,7 +621,7 @@
     {
       "id": 19,
       "sku": "813087",
-      "title": "Sofá 3 Lugares Retrátil Berna Linho Grafite 180 cm",
+      "title": "Sofá Retrátil Berna Linho Grafite",
       "category": "Sofás",
       "tags": ["Sofá Retrátil", "Sala"],
       "normalPrice": 1749.99,
@@ -655,7 +655,7 @@
     {
       "id": 21,
       "sku": "1089207",
-      "title": "Mesa de Jantar Retangular Macaúba Madeira Maciça Amêndoa 160 cm",
+      "title": "Mesa de Jantar Retangular Macaúba Amêndoa",
       "category": "Mesas",
       "tags": ["Mesa de Jantar", "Mesa", "Cozinha"],
       "normalPrice": 3099.99,
@@ -688,7 +688,7 @@
     {
       "id": 22,
       "sku": "718045",
-      "title": "Mesa de Jantar Redonda com Tampo de Vidro Isabela Ipê e Off White 100 cm",
+      "title": "Mesa de Jantar Redonda com Tampo de Vidro",
       "category": "Mesas",
       "tags": ["Mesa de Jantar", "Mesa", "Cozinha"],
       "normalPrice": 993.99,
@@ -719,7 +719,7 @@
     {
       "id": 23,
       "sku": "782050",
-      "title": "Mesa de Jantar Retangular com Tampo de Vidro Agata Off White e Nature 130 cm",
+      "title": "Mesa de Jantar com Tampo de Vidro",
       "category": "Mesas",
       "tags": ["Mesa de Jantar", "Mesa", "Sala"],
       "normalPrice": 1299.99,
@@ -752,7 +752,7 @@
     {
       "id": 24,
       "sku": "782050",
-      "title": "Mesa de Jantar Quadrada Industrial Stanford Amêndoa e Preta 90 cm",
+      "title": "Mesa de Jantar Industrial Stanford Amêndoa e Preta",
       "category": "Mesas",
       "tags": ["Mesa de Jantar", "Mesa", "Cozinha"],
       "normalPrice": 587.99,
@@ -785,7 +785,7 @@
     {
       "id": 25,
       "sku": "1166596",
-      "title": "Mesa de Jantar Redonda Extensível com Tampo MDF Fresta Avelã",
+      "title": "Mesa de Jantar Redonda Extensível",
       "category": "Mesas",
       "tags": ["Mesa de Jantar", "Mesa", "Cozinha"],
       "normalPrice": 2219.99,
@@ -849,7 +849,7 @@
     {
       "id": 27,
       "sku": "872146",
-      "title": "Mesa de Escritório em L Anah Freijó e Preta",
+      "title": "Mesa de Escritório em L Freijó e Preta",
       "category": "Mesas",
       "tags": ["Mesa de Escritório", "Mesa", "Escritório"],
       "normalPrice": 989.99,
@@ -881,7 +881,7 @@
     {
       "id": 28,
       "sku": "773224",
-      "title": "Mesa de Escritório Studio Nogal 150 cm",
+      "title": "Mesa de Escritório Studio Nogal",
       "category": "Mesas",
       "tags": ["Mesa de Escritório", "Mesa", "Escritório"],
       "normalPrice": 442.99,
@@ -947,7 +947,7 @@
     {
       "id": 30,
       "sku": "1164648",
-      "title": "Mesa de Escritório em L Studio Preta 120x140 cm",
+      "title": "Mesa de Escritório em L Studio Preta",
       "category": "Mesas",
       "tags": ["Mesa de Escritório", "Mesa", "Escritório"],
       "normalPrice": 719.99,
@@ -981,7 +981,7 @@
     {
       "id": 31,
       "sku": "1016962",
-      "title": "Guarda Roupa Casal com Espelho Valência 2 PT 6 GV Branco",
+      "title": "Guarda Roupa Casal com Espelho Valência Branco",
       "category": "Armarios",
       "tags": ["Armario", "Casa", "Quarto"],
       "normalPrice": 2699.99,
@@ -1014,7 +1014,7 @@
     {
       "id": 32,
       "sku": "1016954",
-      "title": "Guarda Roupa Casal com Espelho Paris 3 PT 2 GV",
+      "title": "Guarda Roupa Casal com Espelho Paris",
       "category": "Armarios",
       "tags": ["Armario", "Casa", "Quarto"],
       "normalPrice": 1329.99,
@@ -1051,7 +1051,7 @@
     {
       "id": 33,
       "sku": "1065514",
-      "title": "Guarda Roupa Solteiro New Conect 4 PT 3 GV",
+      "title": "Guarda Roupa Solteiro New Conect",
       "category": "Armarios",
       "tags": ["Armario", "Casa", "Quarto"],
       "normalPrice": 1489.99,
@@ -1088,7 +1088,7 @@
     {
       "id": 34,
       "sku": "936144",
-      "title": "Guarda Roupa Casal com 2 Espelhos Belluno 2 PT 3 GV",
+      "title": "Guarda Roupa Casal 2 Espelhos Belluno",
       "category": "Armarios",
       "tags": ["Armario", "Casa", "Quarto"],
       "normalPrice": 2828.99,
@@ -1158,7 +1158,7 @@
     {
       "id": 36,
       "sku": "952842",
-      "title": "Guarda Roupa Casal Malibu 6 PT 2 GV",
+      "title": "Guarda Roupa Casal Malibu",
       "category": "Armarios",
       "tags": ["Armario", "Casa", "Quarto"],
       "normalPrice": 579.99,
@@ -1191,7 +1191,7 @@
     {
       "id": 37,
       "sku": "952842",
-      "title": "Guarda Roupa Solteiro com Espelho Reflecta Elite II 2 PT 3",
+      "title": "Guarda Roupa Solteiro Espelho Reflecta Elite",
       "category": "Armarios",
       "tags": ["Armario", "Casa", "Quarto"],
       "normalPrice": 3574.99,
@@ -1228,7 +1228,7 @@
     {
       "id": 38,
       "sku": "901464",
-      "title": "Armário de Cozinha Completa Madesa Emilly Box com Balcão e Aéreo Vidro - Rustic/Preto",
+      "title": "Armário de Cozinha Completa Madesa - Rustic/Preto",
       "category": "Armarios",
       "tags": ["Armario", "Casa", "Cozinha"],
       "normalPrice": 2249.99,
@@ -1261,7 +1261,7 @@
     {
       "id": 39,
       "sku": "1033962",
-      "title": "Guarda Roupa Solteiro com 1 Espelho Lugano 2",
+      "title": "Guarda Roupa Solteiro com 1 Espelho Lugano",
       "category": "Armarios",
       "tags": ["Armario", "Casa", "Quarto"],
       "normalPrice": 1556.96,
@@ -1294,7 +1294,7 @@
     {
       "id": 40,
       "sku": "1221811",
-      "title": "Guarda Roupa Casal com 3 Espelhos Genebra 100% MDF 3 PT 4 GV",
+      "title": "Guarda Roupa Casal 3 Espelhos Genebra 100% MDF",
       "category": "Armarios",
       "tags": ["Armario", "Casa", "Quarto"],
       "normalPrice": 5479.99,
@@ -1582,7 +1582,7 @@
     },
     {
       "id": 47,
-      "title": "Cadeira Living Estofada Ávila L02",
+      "title": "Cadeira Living Estofada Ávila",
       "sku": "1163777",
       "category": "Cadeiras",
       "tags": ["Sala de jantar", "cadeiras de jantar"],
@@ -1622,7 +1622,7 @@
     },
     {
       "id": 48,
-      "title": " Cadeira Melina L02 Couríssimo ",
+      "title": " Cadeira Melina Couríssimo ",
       "sku": "1144106",
       "category": "Cadeiras",
       "tags": ["sala de jantar", "Cadeiras de jantar"],
@@ -1753,7 +1753,7 @@
     {
       "id": 51,
       "sku": "872147",
-      "title": "Escrivaninha Anah 1 GV Freijó e Preta",
+      "title": "Escrivaninha Anah Freijó e Preta",
       "category": "Mesas",
       "tags": ["Mesas", "Escritório", "Estudo"],
       "normalPrice": 532.99,
@@ -1790,7 +1790,7 @@
     {
       "id": 52,
       "sku": "1136791",
-      "title": "Escrivaninha Studio Mel e Branca 150 cm",
+      "title": "Escrivaninha Studio Mel e Branca",
       "category": "Mesas",
       "tags": ["Mesas", "Escritório", "Estudo"],
       "normalPrice": 469.99,
@@ -1860,7 +1860,7 @@
     {
       "id": 54,
       "sku": "1007565",
-      "title": "Escrivaninha Studio Carvalho e Preta 180 cm",
+      "title": "Escrivaninha Studio Carvalho e Preta",
       "category": "Escrivaninhas",
       "tags": ["Escritório", "Móveis"],
       "normalPrice": 665.99,
@@ -1899,7 +1899,7 @@
     {
       "id": 55,
       "sku": "1136819",
-      "title": "Escrivaninha com Estante Studio Mel e Branca 150x75 cm",
+      "title": "Escrivaninha com Estante Studio Mel e Branca",
       "category": "Escrivaninhas",
       "tags": ["Escritório", "Móveis"],
       "normalPrice": 689.99,
@@ -1977,7 +1977,7 @@
     {
       "id": 57,
       "sku": "1066131",
-      "title": "Escrivaninha Wood 1 GV Branca e Marrom",
+      "title": "Escrivaninha Wood Branca e Marrom",
       "category": "Escrivaninhas",
       "tags": ["Escritório", "Móveis"],
       "normalPrice": 659.99,

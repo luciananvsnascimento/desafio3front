@@ -1,4 +1,4 @@
-import '../styles/banner.css';
+import '../styles/banner-benefits.css';
 import guarantee from '/src/assets/guarantee.png';
 import shipping from '/src/assets/shipping.png';
 import trophy from '/src/assets/trophy.png';

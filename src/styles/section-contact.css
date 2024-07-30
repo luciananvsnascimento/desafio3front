@@ -24,12 +24,17 @@
     font-weight: 400;
     color: #9F9F9F;
   }
+
+  .section-contact .contact-info h3 svg {
+    margin-right: 8px;
+  }
   
   .contact-area {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     width: 100%;
+    padding: 2%;
   }
   
   .contact-info {

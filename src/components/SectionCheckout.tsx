@@ -1,6 +1,6 @@
 import BillingForm from './BillingForm';
 import OrderPayment from './OrderPayment';
-import '../styles/sectioncheckout.css';
+import '../styles/section-checkout.css';
 
 const SectionCheckout = () => {
   return (

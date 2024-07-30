@@ -1,24 +1,25 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-
 .section-checkout {
+  width: 100%;
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
   padding: 8%;
   height: fit-content;
+  overflow: hidden;
   gap: 20px;
 }
 
 .billing-form {
   width: 608px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .order-payment {
   width: 608px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .billing-form h2 {
@@ -159,4 +160,11 @@ hr{
   text-align: center;
   align-self: center;
 
+}
+
+@media (max-width: 768px){
+  .section-checkout{
+    display: flex;
+    flex-direction: column;
+  }
 }

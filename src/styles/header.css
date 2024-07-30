@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .nav {
@@ -24,6 +25,8 @@
 }
 
 .nav-links {
+    max-width: 430px;
+    height: 21px;
     display: flex;
     align-items: center;
     justify-content: center;

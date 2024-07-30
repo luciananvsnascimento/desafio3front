@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../styles/sectioncontact.css';
+import '../styles/section-contact.css';
+import { FaMapMarkerAlt, FaPhoneAlt, FaClock } from 'react-icons/fa';
 
 const SectionContact = () => {
   const [formData, setFormData] = useState({
@@ -54,15 +55,15 @@ const SectionContact = () => {
         <div className="contact-info">
           <div className='contact-address'>
             <div>
-              <h3>Address</h3>
+              <h3><FaMapMarkerAlt />Address</h3>
               <p>236 5th SE Avenue, New<br/> York NY10000, United States</p>
             </div>
             <div>
-              <h3>Phone</h3>
+              <h3><FaPhoneAlt />Phone</h3>
               <p>Mobile: + (84) 546-6789<br />Hotline: + (84) 456-6789</p>
             </div>
             <div>
-              <h3>Working Time</h3>
+              <h3><FaClock />Working Time</h3>
               <p>Monday-Friday: 9:00 - <br />22:00<br />Saturday-Sunday: 9:00 - <br />21:00</p>
             </div>
           </div>
