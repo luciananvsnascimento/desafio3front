@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Product } from '../types/Product';
+import { useCart } from '../contexts/CartContext';  
 import '../styles/cart-modal.css';
-import deleteIcon from '../assets/delete-icon.png';
 
 interface CartModalProps {
   cart: Product[];
@@ -11,6 +11,7 @@ interface CartModalProps {
 }
 
 const CartModal: React.FC<CartModalProps> = ({ cart, isVisible, onClose }) => {
+  const { removeFromCart } = useCart(); 
   if (!isVisible) return null;
 
   const calculateTotal = () => {
@@ -32,8 +33,8 @@ const CartModal: React.FC<CartModalProps> = ({ cart, isVisible, onClose }) => {
                 <p className="cart-item-title">{product.title}</p>
                 <p className="cart-item-price">{product.quantity} x Rs. {product.salePrice.toFixed(2)}</p>
               </div>
-              <button className="delete-btn">
-                <img src={deleteIcon} alt="Delete" />
+              <button className="delete-btn" onClick={() => removeFromCart(product.id)}>
+                x
               </button>
             </div>
           ))}

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/cardproduct.css';
 import { FaShareAlt, FaExchangeAlt, FaHeart } from 'react-icons/fa';
 import { Product } from '../types/Product';
+import { useCart } from '../contexts/CartContext';
 
 interface CardProductProps {
   product: Product;
@@ -10,12 +11,17 @@ interface CardProductProps {
 
 const CardProduct: React.FC<CardProductProps> = ({ product }) => {
   const navigate = useNavigate();
+  const { addToCart } = useCart();
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleCardClick = () => {
     navigate(`/productpage/${product.id}`);
   };
 
-  const [isHovered, setIsHovered] = useState(false);
+  const handleAddToCart = (event: React.MouseEvent) => {
+    event.stopPropagation();
+    addToCart(product);
+  };
 
   return (
     <div
@@ -34,16 +40,16 @@ const CardProduct: React.FC<CardProductProps> = ({ product }) => {
       {isHovered && (
         <div className="card-hover-overlay">
           <div className="card-hover-content">
-            <button className="add-to-cart">Add to Cart</button>
+            <button className="add-to-cart" onClick={handleAddToCart}>Add to Cart</button>
             <div className="card-action-icons">
               <p className="actions-card">
-              <FaShareAlt className="icon-action" />Share 
+                <FaShareAlt className="icon-action" />Share 
               </p>
               <p className="actions-card">
-              <FaExchangeAlt className="icon-action" />Compare 
+                <FaExchangeAlt className="icon-action" />Compare 
               </p>
               <p className="actions-card">
-              <FaHeart className="icon-action" />Like 
+                <FaHeart className="icon-action" />Like 
               </p>
             </div>
           </div>

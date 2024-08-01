@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from '../firebaseConfig';
 import { Link, useNavigate } from 'react-router-dom';
-import '../styles/signup.css';
+import '../styles/login-signup.css';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -11,16 +11,19 @@ const Login: React.FC = () => {
   const navigate = useNavigate();
   const [message, setMessage] = useState<string | null>(null);
 
+  useEffect(() => {
+    if (user) {
+      setMessage('Login successful!');
+      setTimeout(() => {
+        navigate('/');
+      }, 1500);
+    }
+  }, [user, navigate]);
+
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(email, password);
-      if (user) {
-        setMessage('Login successful!');
-        setTimeout(() => {
-          navigate('/');
-        }, 1500); 
-      }
     } catch (err) {
       setMessage('Error: ' + (err as Error).message);
     }
@@ -36,12 +39,14 @@ const Login: React.FC = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
+            required
           />
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
+            required
           />
           <button type="submit" disabled={loading}>
             {loading ? 'Logging in...' : 'Login'}
@@ -52,7 +57,7 @@ const Login: React.FC = () => {
             {message}
           </div>
         )}
-        <Link to="/signup">Don't have an account? Sign Up</Link>
+        <Link to="/signup" className="custom-link">Don't have an account? Sign Up</Link>
       </div>
     </div>
   );

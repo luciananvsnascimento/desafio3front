@@ -5,7 +5,7 @@ import CategoriesArea from '../components/CategoriesArea';
 import OurProducts from '../components/OurProducts';
 import Carrossel from './Carrossel';
 import FurtureHome from './FurtureHome';
-import '../styles/section-home.css';
+
 
 
 const SectionHome: React.FC = () => {

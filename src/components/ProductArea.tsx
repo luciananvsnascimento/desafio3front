@@ -1,4 +1,3 @@
-// src/components/ProductArea.tsx
 import React, { useState } from 'react';
 import { useCart } from '../contexts/CartContext';
 import { Product } from '../types/Product';
@@ -95,7 +94,7 @@ const ProductArea: React.FC<ProductAreaProps> = ({ product }) => {
               <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
                 <img src='https://img.icons8.com/ios/50/000000/instagram-new.png' className='icon-sm' alt='Instagram' />
               </a>
-              <a href='https://twitter.com/' target='_blank' rel='noreferrer'>
+              <a href='https://www.twitter.com/' target='_blank' rel='noreferrer'>
                 <img src='https://img.icons8.com/ios/50/000000/twitter.png' className='icon-sm' alt='Twitter' />
               </a>
             </div>

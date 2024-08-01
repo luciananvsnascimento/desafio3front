@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/related-product.css'
+import { Link } from 'react-router-dom';
 import CardProduct from './CardProduct';
 import { Product } from '../types/Product';
 
@@ -36,7 +37,9 @@ const RelatedProduct: React.FC<RelatedProductProps> = ({ product }) => {
           <CardProduct key={relatedProduct.id} product={relatedProduct} />
         ))}
       </div>
-      <button className='show-more'>Show More</button>
+      <button className='show-more'>
+      <Link to='/shop' className='show-txt'>Show More</Link>
+      </button>
     </section>
   );
 };

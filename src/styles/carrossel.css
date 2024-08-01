@@ -71,7 +71,14 @@
   object-fit: cover;
   margin-right: 30px;
   height: 100%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 
+}
+
+
+.img-container:hover {
+  transform: scale(1.08);
 }
 
 .category-name {
@@ -137,6 +144,7 @@
   margin-right: -20px;
   flex-basis: 30%;
 }
+
 
 .slick-next,
 .slick-prev {

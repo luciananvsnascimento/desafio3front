@@ -3,21 +3,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #f5f5f5;
+    height: 90vh;
+    padding: 5%;
   }
   
   .login-form, .signup-form {
     max-width: 400px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #fff;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
   }
   
   .login-form h2, .signup-form h2 {
+    font-family: Poppins;
     margin-bottom: 1rem;
     font-size: 1.5rem;
     text-align: center;
@@ -27,10 +33,10 @@
     width: 100%;
     padding: 0.75rem;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #B88E2F;
     border-radius: 4px;
   }
-  
+
   .login-form button, .signup-form button {
     width: 100%;
     padding: 0.75rem;
@@ -52,12 +58,23 @@
   }
   
   .message.error {
-    color: #dc3545;
+    color: #f90019;
   }
   
   .message.success {
     color: #B88E2F;
   }
+
+  .custom-link {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+    color: #B88E2F;
+    text-decoration: none; 
+}
+
   
   @media (max-width: 600px) {
     .login-form, .signup-form {
