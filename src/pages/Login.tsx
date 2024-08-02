@@ -5,8 +5,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import '../styles/login-signup.css';
 
 const Login: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
   const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
   const [message, setMessage] = useState<string | null>(null);

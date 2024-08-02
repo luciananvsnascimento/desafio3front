@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useCart } from '../contexts/CartContext';
 import '../styles/section-cart.css';
 import deleteIcon from '../assets/delete-icon.png';
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../contexts/AuthContext';
 
 const SectionCart: React.FC = () => {
   const { cart, setCart } = useCart();
+  const authContext = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  if (authContext === undefined) {
+    throw new Error('useAuth must be used within an AuthProvider');
+  }
+
+  const { user, loading } = authContext;
 
   const handleDecrease = (productId: number) => {
     setCart(cart.map(product => 
@@ -25,6 +35,18 @@ const SectionCart: React.FC = () => {
   const calculateTotal = () => {
     return cart.reduce((total, product) => total + product.salePrice * (product.quantity || 1), 0).toFixed(2);
   };
+
+  const handleCheckout = () => {
+    if (user) {
+      navigate('/checkout');
+    } else {
+      navigate('/login');
+    }
+  };
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <section className="section-cart">
@@ -64,7 +86,9 @@ const SectionCart: React.FC = () => {
             <p className='text'>Total</p>
             <span className='total-value'>Rs. {calculateTotal()}</span>
           </div>
-          <button className='btn-checkout'>Check Out</button>
+          <button className='btn-checkout' onClick={handleCheckout}>
+            Check Out
+          </button>
         </div>
       </div>
     </section>

@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Product } from '../types/Product';
-import { useCart } from '../contexts/CartContext';  
+import { useCart } from '../contexts/CartContext';
+import { AuthContext } from '../contexts/AuthContext';
 import '../styles/cart-modal.css';
 
 interface CartModalProps {
@@ -11,12 +12,35 @@ interface CartModalProps {
 }
 
 const CartModal: React.FC<CartModalProps> = ({ cart, isVisible, onClose }) => {
-  const { removeFromCart } = useCart(); 
+  const { removeFromCart } = useCart();
+  const authContext = useContext(AuthContext);
+  
+  if (authContext === undefined) {
+    throw new Error('AuthContext must be used within an AuthProvider');
+  }
+
+  const { user, loading } = authContext;
+  const navigate = useNavigate();
+
   if (!isVisible) return null;
 
   const calculateTotal = () => {
     return cart.reduce((acc, product) => acc + product.salePrice * (product.quantity || 1), 0).toFixed(2);
   };
+
+  const handleCheckout = () => {
+    console.log('Handle Checkout Clicked');
+    console.log('User:', user);
+    if (user) {
+      navigate('/checkout');
+    } else {
+      navigate('/login');
+    }
+  };
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="cart-modal">
@@ -42,9 +66,15 @@ const CartModal: React.FC<CartModalProps> = ({ cart, isVisible, onClose }) => {
         <div className="cart-modal-footer">
           <p className="cart-total">Subtotal: <span className="cart-total-value">Rs. {calculateTotal()}</span></p>
           <div className="cart-modal-buttons">
-            <Link to="/cart" className="cart-modal-btn">Cart</Link>
-            <Link to="/checkout" className="cart-modal-btn">Checkout</Link>
-            <Link to="/comparison" className="cart-modal-btn">Comparison</Link>
+            <button className="cart-modal-btn" onClick={() => navigate('/cart')}>
+              Cart
+            </button>
+            <button className="cart-modal-btn" onClick={handleCheckout}>
+              Checkout
+            </button>
+            <button className="cart-modal-btn" onClick={() => navigate('#')}>
+              Comparison
+            </button>
           </div>
         </div>
       </div>

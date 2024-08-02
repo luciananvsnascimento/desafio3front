@@ -7,13 +7,14 @@
   }
   
   .cart-infos {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     padding: 20px;
   }
   
   .order-product {
+    width: 80%;
     min-width: 60%;
   }
   
@@ -42,8 +43,8 @@
   }
   
   .image-product {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-color: bisque;
     margin-right: 10px;
   }

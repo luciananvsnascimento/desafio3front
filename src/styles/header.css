@@ -1,142 +1,143 @@
-/* src/styles/header.css */
 .header {
-    width: 100%;
-    height: fit-content;
-    padding: 20px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-furniro { 
+  height: 41px; 
+  width: 185px; 
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-options {
+  display: flex;
+  gap: 20px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-options li {
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000000; 
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.profile-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 110%;
+  transform: translateY(-50%);
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.profile-container:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 5px 10px;
+  white-space: nowrap;
+  align-self: center;
+  text-align: left;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 2px solid #B88E2F ;
+  color: #B88E2F;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.logout-button:hover {
+  background-color: #B88E2F;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 23px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
   .nav {
-    width: 90%;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
-  
-  .logo-furniro { 
-    height: 41px; 
-    width: 185px; 
+  .logo-furniro {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
   }
-  
   .nav-links {
-    display: flex;
-    align-items: center;
+    width: 100%;
     justify-content: center;
+    margin-bottom: 10px;
   }
-  
   .menu-options {
-    display: flex;
-    gap: 20px; 
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .menu-options li {
-    display: flex;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #000000; 
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: left;
-  }
-  
-  .profile-container {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
-    z-index: 1000;
-  }
-  
-  .profile-container:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown-item {
-    padding: 5px 10px;
-    white-space: nowrap;
-    text-align: left;
-    text-decoration: none;
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #B88E2F;
-    display: block;
-    border: 2px solid #B88E2F;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .logout-button {
-    background: none;
-    border: none;
-    color: #000;
-    cursor: pointer;
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-  }
-  
-  .logout-button:hover {
-    background-color: #B88E2F;
-  }
-  
   .icons {
-    display: flex;
-    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
   }
-  
-  .icon {
-    width: 23px;
-    height: 18px;
-  }
-  
-  @media (max-width: 768px) {
-    .nav {
-      flex-direction: column;
-      align-items: center;
-    }
-    .logo-furniro {
-      width: 100px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-    .nav-links {
-      width: 100%;
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-    .menu-options {
-      flex-direction: column;
-      align-items: center;
-    }
-    .icons {
-      width: 100%;
-      justify-content: center;
-      margin-top: 10px;
-    }
-  }
-  
+}
