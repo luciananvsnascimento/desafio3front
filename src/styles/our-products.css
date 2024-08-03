@@ -1,27 +1,27 @@
 .our-products{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 5%;
-    padding-inline: 8%;
-    text-align: center;
-    overflow: hidden;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+  padding-inline: 8%;
+  text-align: center;
+  overflow: hidden;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
 }
 
 .show-more{
-    width: 245px;
-    height: 48px;
-    color: #B88E2F;
-    border: 1px solid #B88E2F;
-    font-family: Poppins;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-    margin-top: 5%;
+  width: 245px;
+  height: 48px;
+  color: #B88E2F;
+  border: 1px solid #B88E2F;
+  font-family: Poppins;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 5%;
 }
 
 .show-txt{
@@ -29,13 +29,12 @@
   color: #B88E2F;
 }
 
-
 .cards-area {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    justify-content: space-between;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: space-between;
+}
 
 @media (max-width: 1028px) {
     .cards-area {

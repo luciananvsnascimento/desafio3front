@@ -1,9 +1,8 @@
 .herohome {
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   overflow: hidden;
-  object-fit: cover; 
 }
 
 .herohome img {
@@ -12,6 +11,100 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   object-position: center;
+}
+
+.homebox {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 643px;
+  height: 443px;
+  background-color: #fff3e3;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-info {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-info > * {
+  margin-bottom: 20px;
+}
+
+.hero-info > *:last-child {
+  margin-bottom: 0;
+}
+
+.s-hero {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+.hero-info h1 {
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 65px;
+  text-align: left;
+  color: #B88E2F;
+}
+
+.hero-info p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #333333;
+}
+
+.buy {
+  width: 222px;
+  height: 74px;
+  background-color: #B88E2F;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .homebox {
+    width: 90%;
+    height: auto;
+  }
+
+  .hero-info h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .hero-info p {
+    font-size: 16px;
+  }
+
+  .buy {
+    width: 180px;
+    height: 60px;
+  }
 }
