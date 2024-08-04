@@ -1,10 +1,9 @@
 import '../styles/hero.css';
-import HeroImg from '../assets/hero-img.png';
 
 const Hero = () => {
   return (
     <section className="herohome">
-      <img src={HeroImg} alt="Hero" />
+      <img src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/hero-img.png' alt="Hero" />
       <div className="homebox">
         <div className="hero-info">
           <span className="s-hero">New Arrival</span>

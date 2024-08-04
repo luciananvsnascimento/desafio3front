@@ -31,6 +31,15 @@ const CardProduct: React.FC<CardProductProps> = ({ product }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <img className="card-image-product" src={product.images.mainImage} alt={product.title} />
+
+      {(product.new || product.discountPercentage > 0) && (
+        <div
+          className={`product-badge ${product.new ? 'new-badge' : 'discount-badge'}`}
+        >
+          {product.new ? 'New' : `-${product.discountPercentage}%`}
+        </div>
+      )}
+
       <div className="card-product_info">
         <h2 className="card-product__title">{product.title}</h2>
         <p className="card-product__description">{product.description.short}</p>

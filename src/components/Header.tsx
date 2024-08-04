@@ -4,9 +4,6 @@ import { signOut } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 import '../styles/header.css';
 import '../styles/global.css';
-import logo from '/src/assets/furniro_logo.png';
-import loginIcon from '/src/assets/perfil.png';
-import cartIcon from '/src/assets/carrinho.png';
 import CartModal from './CartModal';
 import { useCart } from '../contexts/CartContext';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -42,7 +39,7 @@ const Header: React.FC = () => {
       <nav className="nav">
         <div className="logo">
           <Link to="/">
-            <img className='logo-furniro' src={logo} alt="Logo" />
+            <img className='logo-furniro' src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/furniro_logo.png' alt="Logo" />
           </Link>
         </div>
         <div className="nav-links">
@@ -75,7 +72,7 @@ const Header: React.FC = () => {
                 <Link to="/login" className="dropdown-item">Login</Link>
               )}
             </div>
-            <img src={loginIcon} alt="Profile" className="icon" />
+            <img src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/perfil.png' alt="Profile" className="icon" />
           </div>
           <div 
             className="cart-icon-container" 
@@ -83,7 +80,7 @@ const Header: React.FC = () => {
             onMouseLeave={handleMouseLeave}
           >
             <Link to="/cart" className="cart-icon-link" onClick={() => setCartVisible(false)}>
-              <img src={cartIcon} alt="Cart" className="icon" />
+              <img src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/carrinho.png' alt="Cart" className="icon" />
             </Link>
             <CartModal cart={cart} isVisible={isCartVisible} onClose={() => setCartVisible(false)} />
           </div>

@@ -75,15 +75,15 @@ const ProductArea: React.FC<ProductAreaProps> = ({ product }) => {
         <div className="additional-info">
           <div className="info-item">
             <span className="label">SKU: </span>
-            <span className="value">{product.sku}</span>
+            <span className="value"> {product.sku}</span>
           </div>
           <div className="info-item">
             <span className="label">Category: </span>
-            <span className="value">{product.category}</span>
+            <span className="value"> {product.category}</span>
           </div>
           <div className="info-item">
             <span className="label">Tags: </span>
-            <span className="value">{product.tags.join(', ')}</span>
+            <span className="value"> {product.tags.join(', ')}</span>
           </div>
           <div className="info-item">
             <span className="label">Share: </span>

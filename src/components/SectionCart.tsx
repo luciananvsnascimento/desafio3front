@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { useCart } from '../contexts/CartContext';
 import '../styles/section-cart.css';
-import deleteIcon from '../assets/delete-icon.png';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthContext';
 
@@ -71,7 +70,7 @@ const SectionCart: React.FC = () => {
               </div>
               <span className='product-subtotal'>Rs. {(product.salePrice * (product.quantity || 1)).toFixed(2)}</span>
               <div className='delete' onClick={() => handleRemove(product.id)}>
-                <img className='icon-delete' src={deleteIcon} alt="Delete" />
+                <img className='icon-delete' src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/delete-icon.png' alt="Delete" />
               </div>
             </div>
           ))}

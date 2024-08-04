@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/filtershop.css';
-import filtercontrol from '../assets/filter_control.png';
-import gridview from '../assets/grid_view.png';
-import listview from '../assets/list_view.png';
 
 interface FilterShopProps {
   onFilterChange: (category: string) => void;
@@ -31,13 +28,13 @@ const FilterShop: React.FC<FilterShopProps> = ({ onFilterChange, onProductsPerPa
       <div className="filter-options">
         <img
           className="ctrl"
-          src={filtercontrol}
+          src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/filter_control.png'
           alt="Filter"
           onClick={() => setShowPopup(!showPopup)}
         />
         Filter
-        <img className="ctrl" src={gridview} alt="Grid View" />
-        <img className="ctrl" src={listview} alt="List View" />
+        <img className="ctrl" src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/grid_view.png' alt="Grid View" />
+        <img className="ctrl" src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/list_view.png' alt="List View" />
         <div className="results-info">
           <span>|</span> Showing 1-{productsPerPage} of 32 results
         </div>

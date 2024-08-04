@@ -1,4 +1,3 @@
-import collage from '../assets/collage-img.png'
 import '../styles/furture-home.css'
 
 const FurtureHome = () => {
@@ -9,7 +8,7 @@ const FurtureHome = () => {
         <span className='share'>Share your setup with</span>
         <p className='tag'>#FuniroFurniture</p>
       </div>
-        <img className='collage-img' src={collage} alt="" />
+        <img className='collage-img' src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/collage-img.png' alt="" />
       
     </div>
   )

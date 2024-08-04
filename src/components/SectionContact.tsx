@@ -39,9 +39,9 @@ const SectionContact = () => {
         message: ''
       });
 
-      alert('Formulário enviado com sucesso!');
-    } else {
-      alert('Por favor, preencha todos os campos obrigatórios.');
+      alert('Form submitted successfully!');
+      } else {
+        alert('Please fill out all required fields.');
     }
   };
 

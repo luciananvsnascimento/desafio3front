@@ -1,7 +1,5 @@
 import React from 'react';
 import '../styles/bannerpage.css'
-import bannerpages from '../assets/bannerpages.png';
-import bylogo from '../assets/bylogo.png'
 
 interface BannerPageProps {
   namepage: string;
@@ -11,9 +9,9 @@ interface BannerPageProps {
 const BannerPage: React.FC<BannerPageProps> = ({ namepage, breadcrumb }) => {
   return (
     <div className="bannerpg">
-      <img src={bannerpages} alt="Banner" className="banner-image" />
+      <img src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/bannerpages.png' alt="Banner" className="banner-image" />
       <div className="banner-content">
-      <img src={bylogo} alt="Banner" className="by-logo" />
+      <img src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/bylogo.png' alt="Banner" className="by-logo" />
       <h1 className="name_page">{namepage}</h1>
         <div className="breadcrumb">{breadcrumb}</div>
         

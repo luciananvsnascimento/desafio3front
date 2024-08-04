@@ -1,8 +1,4 @@
 import '../styles/banner-benefits.css';
-import guarantee from '/src/assets/guarantee.png';
-import shipping from '/src/assets/shipping.png';
-import trophy from '/src/assets/trophy.png';
-import support from '/src/assets/support.png';
 
 const BannerBenefits = () => {
   return (
@@ -10,7 +6,7 @@ const BannerBenefits = () => {
       <div className="content-banner">
         <div className="benefits">
           <div className="image-container">
-            <img src={trophy} alt="Benefit Image" />
+            <img src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/trophy.png' alt="Benefit Image" />
           </div>
           <div className="text-container">
             <h3>High Quality</h3>
@@ -19,7 +15,7 @@ const BannerBenefits = () => {
         </div>
         <div className="benefits">
           <div className="image-container">
-            <img src={guarantee} alt="Benefit Image" />
+            <img src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/guarantee.png' alt="Benefit Image" />
           </div>
           <div className="text-container">
             <h3>Warranty Protection</h3>
@@ -28,7 +24,7 @@ const BannerBenefits = () => {
         </div>
         <div className="benefits">
           <div className="image-container">
-            <img src={support} alt="Benefit Image" />
+            <img src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/support.png' alt="Benefit Image" />
           </div>
           <div className="text-container">
             <h3>Free Shipping</h3>
@@ -37,7 +33,7 @@ const BannerBenefits = () => {
         </div>
         <div className="benefits">
           <div className="image-container">
-            <img src={shipping} alt="Benefit Image" />
+            <img src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/shipping.png' alt="Benefit Image" />
           </div>
           <div className="text-container">
             <h3>24 / 7 Support</h3>

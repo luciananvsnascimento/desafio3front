@@ -8,11 +8,36 @@
   transition: transform 0.2s ease-in-out;
 }
 
-
 .card-image-product {
   width: 100%;
   height: 70%;
   object-fit: cover;
+}
+
+.product-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+}
+
+.new-badge {
+  background-color: #2ec1ac;
+}
+
+.discount-badge {
+  background-color: #e97171;
 }
 
 .card-product_info {
@@ -78,7 +103,7 @@
   color: white;
 }
 
-.add-to-cart{
+.add-to-cart {
   background-color: white;
   color: #B88E2F;
   border: none;
@@ -91,7 +116,7 @@
   text-align: left;
 }
 
-.actions-card{
+.actions-card {
   font-family: Poppins;
   font-size: 12px;
   font-weight: 600;
