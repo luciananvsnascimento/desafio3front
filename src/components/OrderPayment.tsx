@@ -1,4 +1,12 @@
+import { useCart } from '../contexts/CartContext';
+
 const OrderPayment = () => {
+  const { cart } = useCart();
+
+  const calculateSubtotal = () => {
+    return cart.reduce((total, product) => total + product.normalPrice * (product.quantity || 1), 0);
+  };
+
   return (
     <div className="order-payment">
       <div className="order-summary">
@@ -7,23 +15,25 @@ const OrderPayment = () => {
             <span className="title-pdt">Product</span>
             <span className="title-pdt">Subtotal</span>
           </div>
-          <div className="order-item">
-            <span className="nm-product">Asgaard sofa x 1</span>
-            <span>Rs. 250,000.00</span>
-          </div>
+          {cart.map((product) => (
+            <div className="order-item" key={product.id}>
+              <span className="nm-product">{product.title} x {product.quantity || 1}</span>
+              <span>Rs. {product.normalPrice * (product.quantity || 1)}</span>
+            </div>
+          ))}
           <div className="order-item">
             <span>Subtotal</span>
-            <span>Rs. 250,000.00</span>
+            <span>Rs. {calculateSubtotal()}</span>
           </div>
           <div className="order-item total">
             <span>Total</span>
-            <span className="totalspan">Rs. 250,000.00</span>
+            <span className="totalspan">Rs. {calculateSubtotal()}</span>
           </div>
         </div>
         <hr />
         <div className="payment-method">
           <label>
-            <input type="radio" name="payment" value="bank-transfer" checked />
+            <input type="radio" name="payment" value="bank-transfer" defaultChecked />
             Direct Bank Transfer
           </label>
           <label>
