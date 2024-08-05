@@ -65,14 +65,16 @@ const Header: React.FC = () => {
             onMouseLeave={() => setDropdownVisible(false)}
             onClick={toggleDropdown}
           >
-            <div className={`dropdown-menu ${isDropdownVisible ? 'visible' : ''}`}>
-              {user ? (
-                <button onClick={handleLogout} className="dropdown-item">Logout</button>
-              ) : (
-                <Link to="/login" className="dropdown-item">Login</Link>
-              )}
-            </div>
             <img src='https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/assets/perfil.png' alt="Profile" className="icon" />
+            {isDropdownVisible && (
+              <div className="dropdown-menu">
+                {user ? (
+                  <button onClick={handleLogout} className="dropdown-item">Logout</button>
+                ) : (
+                  <Link to="/login" className="dropdown-item">Login</Link>
+                )}
+              </div>
+            )}
           </div>
           <div 
             className="cart-icon-container" 
