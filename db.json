@@ -33,40 +33,9 @@
         ]
       }
     },
+    
     {
       "id": 2,
-      "sku": "760330",
-      "title": "Rack Madesa Reims",
-      "category": "Racks",
-      "tags": ["Rack", "Rack-Fortaleza", "Sala"],
-      "normalPrice": 1079.99,
-      "salePrice": 399.59,
-      "discountPercentage": 63,
-      "new": true,
-      "slug": "rack-para-tv-ate-75-polegadas-madesa-reims-2-portas-1-gaveta-branco",
-      "description": {
-        "short": "Rack Madesa Reims Branco para deixar sua casa ainda mais bonita e organizada!",
-        "long": "O móvel possui um design super moderno, com destaque para seus pés de madeira maciça na cor marrom que, além de proporcionarem uma ótima sustentação, trazem um charme a mais para qualquer ambiente. O Rack Madesa Reims é ideal para TVs de até 75 polegadas e tem espaço de sobra! Com duas portas laterais e uma gaveta com corrediças metálicas, é perfeito para armazenar e organizar aparelhos eletrônicos, livros, objetos decorativos, DVDs e muito mais."
-      },
-      "colors": [
-        {
-          "name": "Branco",
-          "hex": "#ffffff"
-        }
-      ],
-      "sizes": ["G", "M"],
-      "rating": 5,
-      "images": {
-        "mainImage": "https://madesacms.vtexassets.com/arquivos/ids/263040-650-650",
-        "gallery": [
-          "https://madesacms.vtexassets.com/arquivos/ids/263043-650-650",
-          "https://madesacms.vtexassets.com/arquivos/ids/263046-650-650",
-          "https://madesacms.vtexassets.com/arquivos/ids/263041-650-650"
-        ]
-      }
-    },
-    {
-      "id": 3,
       "sku": "1185191",
       "title": "Rack Charlotte Carvalho e Verde Menta",
       "category": "Racks",
@@ -99,7 +68,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 3,
       "sku": "1133908",
       "title": "Rack Bancada Suspensa Fenddi Naturale MDT",
       "category": "Racks",
@@ -132,7 +101,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 4,
       "sku": "522361",
       "title": "Rack Classic Off White Freijó Touch",
       "category": "Racks",
@@ -169,7 +138,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 5,
       "sku": "1011823",
       "title": "Rack Vivare Preto e Freijó",
       "category": "Racks",
@@ -206,44 +175,7 @@
       }
     },
     {
-      "id": 7,
-      "sku": "939470",
-      "title": "Rack Turim Madesa",
-      "category": "Racks",
-      "tags": ["Rack", "Retrô", "Pés de Madeira", "Sala"],
-      "normalPrice": 439.98,
-      "salePrice": 251.09,
-      "discountPercentage": 63,
-      "new": false,
-      "slug": "rack-para-tv-ate-65-polegadas-com-pes-preto-turim-madesa",
-      "description": {
-        "short": "O Rack para TV Turim da Madesa é moderno e prático para a sala ou para o quarto.",
-        "long": "O Rack para TV Turim da Madesa é ideal para quem busca um ambiente moderno e prático para a sala de estar ou para o quarto. Ideal para TV da até de 65 polegadas, este rack é perfeito para organizar seus aparelhos eletrônicos e itens decorativos com estilo e praticidade, pois conta com quatro nichos de diferentes tamanhos. Os pés em PVC garantem estabilidade e durabilidade, e a abertura para passagem de fios mantém o ambiente organizado. O acabamento preto é feito em Pintura Poliéster ecológica com 7 camadas, detalhe que agrega durabilidade e qualidade ao produto."
-      },
-      "colors": [
-        {
-          "name": "Branco",
-          "hex": "#FFFFFF"
-        },
-        {
-          "name": "Preto",
-          "hex": "#000000"
-        }
-      ],
-      "sizes": ["G"],
-      "rating": 4.5,
-      "images": {
-        "mainImage": "https://madesacms.vtexassets.com/arquivos/ids/280284-650-650",
-        "gallery": [
-          "https://madesacms.vtexassets.com/arquivos/ids/280280-650-650",
-          "https://madesacms.vtexassets.com/arquivos/ids/280282-650-650",
-          "https://madesacms.vtexassets.com/arquivos/ids/280239-650-650",
-          "https://madesacms.vtexassets.com/arquivos/ids/280281-650-650"
-        ]
-      }
-    },
-    {
-      "id": 8,
+      "id": 6,
       "sku": "739703",
       "title": "Rack Ciro Branco 125 cm",
       "category": "Racks",
@@ -282,7 +214,7 @@
       }
     },
     {
-      "id": 9,
+      "id": 7,
       "sku": "1051175",
       "title": "Rack 2 Portas Ditália Branco",
       "category": "Racks",
@@ -321,7 +253,7 @@
       }
     },
     {
-      "id": 10,
+      "id": 8,
       "sku": "1185189",
       "title": "Rack Theo Cinamomo",
       "category": "Racks",
@@ -359,7 +291,7 @@
     },
 
     {
-      "id": 11,
+      "id": 9,
       "sku": "531871",
       "title": "Sofá-Cama Casal Génova Azul",
       "category": "Sofás",
@@ -392,7 +324,7 @@
       }
     },
     {
-      "id": 12,
+      "id": 10,
       "sku": "204089",
       "title": "Sofá-Cama Casal Premium Suede Cinza",
       "category": "Sofás",
@@ -424,7 +356,7 @@
       }
     },
     {
-      "id": 13,
+      "id": 11,
       "sku": "531875",
       "title": "Sofá-Cama Casal Córsega Cinza",
       "category": "Sofás",
@@ -457,7 +389,7 @@
       }
     },
     {
-      "id": 14,
+      "id": 12,
       "sku": "531875",
       "title": "Sofá-Cama Casal Venice Amarelo",
       "category": "Sofás",
@@ -489,7 +421,7 @@
       }
     },
     {
-      "id": 15,
+      "id": 13,
       "sku": "1147903",
       "title": "Sofá Retrátil Solomons Linho Bege",
       "category": "Sofás",
@@ -522,7 +454,7 @@
       }
     },
     {
-      "id": 16,
+      "id": 14,
       "sku": "1147875",
       "title": "Sofá Retrátil Reclinável Lupin",
       "category": "Sofás",
@@ -555,7 +487,7 @@
       }
     },
     {
-      "id": 17,
+      "id": 15,
       "sku": "785346",
       "title": "Sofá Belgrado Chaise Linho Cinza",
       "category": "Sofás",
@@ -587,7 +519,7 @@
       }
     },
     {
-      "id": 18,
+      "id": 16,
       "sku": "623883",
       "title": "Sofá Retrátil Reclinável Suede Grafite",
       "category": "Sofás",
@@ -619,7 +551,7 @@
       }
     },
     {
-      "id": 19,
+      "id": 17,
       "sku": "813087",
       "title": "Sofá Retrátil Linho/Grafite",
       "category": "Sofás",
@@ -653,7 +585,7 @@
     },
 
     {
-      "id": 21,
+      "id": 18,
       "sku": "1089207",
       "title": "Mesa de Jantar Macaúba",
       "category": "Mesas",
@@ -686,7 +618,7 @@
       }
     },
     {
-      "id": 22,
+      "id": 19,
       "sku": "718045",
       "title": "Mesa de Jantar Redonda Tampo de Vidro",
       "category": "Mesas",
@@ -717,7 +649,7 @@
       }
     },
     {
-      "id": 23,
+      "id": 20,
       "sku": "782050",
       "title": "Mesa de Jantar Tampo de Vidro",
       "category": "Mesas",
@@ -750,7 +682,7 @@
       }
     },
     {
-      "id": 24,
+      "id": 21,
       "sku": "782050",
       "title": "Mesa de Jantar Industrial Stanford",
       "category": "Mesas",
@@ -783,7 +715,7 @@
       }
     },
     {
-      "id": 25,
+      "id": 22,
       "sku": "1166596",
       "title": "Mesa de Jantar Redonda Extensível",
       "category": "Mesas",
@@ -816,7 +748,7 @@
       }
     },
     {
-      "id": 26,
+      "id": 23,
       "sku": "872145",
       "title": "Mesa de Escritório Anah Freijó/Preta",
       "category": "Mesas",
@@ -847,7 +779,7 @@
       }
     },
     {
-      "id": 27,
+      "id": 24,
       "sku": "872146",
       "title": "Mesa de Escritório L Freijó/Preta",
       "category": "Mesas",
@@ -879,7 +811,7 @@
       }
     },
     {
-      "id": 28,
+      "id": 25,
       "sku": "773224",
       "title": "Mesa de Escritório Nogal",
       "category": "Mesas",
@@ -912,7 +844,7 @@
       }
     },
     {
-      "id": 29,
+      "id": 26,
       "sku": "225653",
       "title": "Mesa de Escritório em L",
       "category": "Mesas",
@@ -945,7 +877,7 @@
       }
     },
     {
-      "id": 30,
+      "id": 27,
       "sku": "1164648",
       "title": "Mesa de Escritório em L Studio Preta",
       "category": "Mesas",
@@ -979,7 +911,7 @@
     },
 
     {
-      "id": 31,
+      "id": 28,
       "sku": "1016962",
       "title": "Guarda Roupa Espelho Valência",
       "category": "Armarios",
@@ -1012,7 +944,7 @@
       }
     },
     {
-      "id": 32,
+      "id": 29,
       "sku": "1016954",
       "title": "Guarda Roupa Espelho",
       "category": "Armarios",
@@ -1049,7 +981,7 @@
       }
     },
     {
-      "id": 33,
+      "id": 30,
       "sku": "1065514",
       "title": "Guarda Roupa Solteiro",
       "category": "Armarios",
@@ -1086,7 +1018,7 @@
       }
     },
     {
-      "id": 34,
+      "id": 31,
       "sku": "936144",
       "title": "Guarda Roupa Belluno",
       "category": "Armarios",
@@ -1123,7 +1055,7 @@
       }
     },
     {
-      "id": 35,
+      "id": 32,
       "sku": "1136861",
       "title": "Guarda Roupa Closet",
       "category": "Armarios",
@@ -1156,7 +1088,7 @@
       }
     },
     {
-      "id": 36,
+      "id": 33,
       "sku": "952842",
       "title": "Guarda Roupa Casal Malibu",
       "category": "Armarios",
@@ -1189,7 +1121,7 @@
       }
     },
     {
-      "id": 37,
+      "id": 34,
       "sku": "952842",
       "title": "Guarda Roupa Solteiro Espelho Reflecta Elite",
       "category": "Armarios",
@@ -1226,7 +1158,7 @@
       }
     },
     {
-      "id": 38,
+      "id": 35,
       "sku": "901464",
       "title": "Armário de Cozinha Madesa ",
       "category": "Armarios",
@@ -1249,7 +1181,7 @@
       "sizes": ["L", "XL", "XS"],
       "rating": 4,
       "images": {
-        "mainImage": "https://static.mobly.com.br/p/Madesa-ArmC3A1rio-de-Cozinha-Completa-Madesa-Emilly-Box-com-BalcC3A3o-e-AC3A9reo-Vidro---Rustic2FPreto-9860-211339-1.jpg",
+        "mainImage": "https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/Madesa-ArmC3A1rio-de-Cozinha-Completa-Madesa-Emilly-Box-com-BalcC3A3o-e-AC3A9reo-Vidro---Rustic2FPreto-9860-211339-1.jpg",
         "gallery": [
           "https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/Madesa-ArmC3A1rio-de-Cozinha-Completa-Madesa-Emilly-Box-com-BalcC3A3o-e-AC3A9reo-Vidro---Rustic2FPreto-9861-211339-2.jpg",
           "https://furniro-img.s3.sa-east-1.amazonaws.com/images/images/Madesa-ArmC3A1rio-de-Cozinha-Completa-Madesa-Emilly-Box-com-BalcC3A3o-e-AC3A9reo-Vidro---Rustic2FPreto-9862-211339-3.jpg",
@@ -1259,7 +1191,7 @@
       }
     },
     {
-      "id": 39,
+      "id": 36,
       "sku": "1033962",
       "title": "Guarda Roupa Solteiro com 1 Espelho Lugano",
       "category": "Armarios",
@@ -1292,7 +1224,7 @@
       }
     },
     {
-      "id": 40,
+      "id": 37,
       "sku": "1221811",
       "title": "Guarda Roupa Casal 100% MDF",
       "category": "Armarios",
@@ -1325,7 +1257,7 @@
     },
 
     {
-      "id": 41,
+      "id": 38,
       "sku": "730455",
       "title": "Cadeira Charles Eames",
       "category": "Cadeiras",
@@ -1365,7 +1297,7 @@
       }
     },
     {
-      "id": 42,
+      "id": 39,
       "sku": "1099478",
       "title": "Cadeiras Mona Linho",
       "category": "Cadeiras",
@@ -1410,7 +1342,7 @@
       }
     },
     {
-      "id": 43,
+      "id": 40,
       "sku": "1250191",
       "title": "Cadeiras Tiva Linho",
       "category": "Cadeiras",
@@ -1450,7 +1382,7 @@
       }
     },
     {
-      "id": 44,
+      "id": 41,
       "sku": "1064890 ",
       "title": "Cadeiras Windsor Fendi",
       "category": "Cadeiras",
@@ -1490,7 +1422,7 @@
       }
     },
     {
-      "id": 45,
+      "id": 42,
       "sku": "1064794",
       "title": "Web Wood Fendi",
       "category": "Cadeiras",
@@ -1535,7 +1467,7 @@
       }
     },
     {
-      "id": 46,
+      "id": 43,
       "sku": "971915",
       "title": "Cadeira Masters Allegra",
       "category": "Cadeiras",
@@ -1581,7 +1513,7 @@
       }
     },
     {
-      "id": 47,
+      "id": 44,
       "title": "Cadeira Living Estofada",
       "sku": "1163777",
       "category": "Cadeiras",
@@ -1621,7 +1553,7 @@
       }
     },
     {
-      "id": 48,
+      "id": 45,
       "title": " Cadeira Melina Couríssimo ",
       "sku": "1144106",
       "category": "Cadeiras",
@@ -1661,7 +1593,7 @@
       }
     },
     {
-      "id": 49,
+      "id": 46,
       "sku": "1103940 ",
       "title": "Cadeira estofada Charles",
       "category": "Cadeiras",
@@ -1706,7 +1638,7 @@
       }
     },
     {
-      "id": 50,
+      "id": 47,
       "sku": "1007587 ",
       "title": "Cadeira Lia Grafite",
       "category": "Cadeiras",
@@ -1751,7 +1683,7 @@
     },
 
     {
-      "id": 51,
+      "id": 48,
       "sku": "872147",
       "title": "Escrivaninha Anah Freijó/Preta",
       "category": "Mesas",
@@ -1788,7 +1720,7 @@
       }
     },
     {
-      "id": 52,
+      "id": 49,
       "sku": "1136791",
       "title": "Escrivaninha Studio Mel/Branca",
       "category": "Mesas",
@@ -1825,7 +1757,7 @@
       }
     },
     {
-      "id": 53,
+      "id": 50,
       "sku": "327761",
       "title": "Escrivaninha Mendes Branca",
       "category": "Mesas",
@@ -1858,7 +1790,7 @@
       }
     },
     {
-      "id": 54,
+      "id": 51,
       "sku": "1007565",
       "title": "Escrivaninha Studio Carvalho/Preta",
       "category": "Escrivaninhas",
@@ -1897,7 +1829,7 @@
       }
     },
     {
-      "id": 55,
+      "id": 52,
       "sku": "1136819",
       "title": "Escrivaninha Estante Studio Mel/Branca",
       "category": "Escrivaninhas",
@@ -1936,7 +1868,7 @@
       }
     },
     {
-      "id": 56,
+      "id": 53,
       "sku": "1034291",
       "title": "Escrivaninha Old Nature",
       "category": "Escrivaninhas",
@@ -1975,7 +1907,7 @@
       }
     },
     {
-      "id": 57,
+      "id": 54,
       "sku": "1066131",
       "title": "Escrivaninha Wood Branca/Marrom",
       "category": "Escrivaninhas",
@@ -2018,7 +1950,7 @@
       }
     },
     {
-      "id": 58,
+      "id": 55,
       "sku": "1034292",
       "title": "Escrivaninha Califórnia Nature",
       "category": "Escrivaninhas",
@@ -2057,7 +1989,7 @@
       }
     },
     {
-      "id": 59,
+      "id": 56,
       "sku": "1134543",
       "title": "Escrivaninha Prism Preta/Cinamomo",
       "category": "Escrivaninhas",
@@ -2100,7 +2032,7 @@
       }
     },
     {
-      "id": 60,
+      "id": 57,
       "sku": "198569",
       "title": "Escrivaninha Mega Office Branca/Amêndoa",
       "category": "Escrivaninhas",
