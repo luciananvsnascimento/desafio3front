@@ -4,7 +4,7 @@ const OrderPayment = () => {
   const { cart } = useCart();
 
   const calculateSubtotal = () => {
-    return cart.reduce((total, product) => total + product.normalPrice * (product.quantity || 1), 0);
+    return cart.reduce((total, product) => total + product.salePrice * (product.quantity || 1), 0);
   };
 
   return (
